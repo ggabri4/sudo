@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd" version="6.53.0" timestamp="2023-05-15T17:22:12.471">
+<file name="E:\ggabri4\Documents\COURS_Master_1\Ingé_logiciel\sudo\src\main\java\sudoku\ElementDeGrilleImplAsChar.java">
+<violation beginline="6" endline="6" begincolumn="18" endcolumn="22" rule="UnusedPrivateField" ruleset="Best Practices" package="sudoku" class="ElementDeGrilleImplAsChar" variable="value" externalInfoUrl="https://pmd.github.io/pmd-6.53.0/pmd_rules_java_bestpractices.html#unusedprivatefield" priority="3">
+Avoid unused private fields such as 'value'.
+</violation>
+</file>
+<file name="E:\ggabri4\Documents\COURS_Master_1\Ingé_logiciel\sudo\src\main\java\sudoku\GrilleImpl.java">
+<violation beginline="12" endline="12" begincolumn="31" endcolumn="46" rule="UnusedPrivateField" ruleset="Best Practices" package="sudoku" class="GrilleImpl" variable="elementDeGrilles" externalInfoUrl="https://pmd.github.io/pmd-6.53.0/pmd_rules_java_bestpractices.html#unusedprivatefield" priority="3">
+Avoid unused private fields such as 'elementDeGrilles'.
+</violation>
+</file>
+<file name="E:\ggabri4\Documents\COURS_Master_1\Ingé_logiciel\sudo\src\main\java\sudoku\GrilleParser.java">
+<violation beginline="28" endline="28" begincolumn="31" endcolumn="35" rule="UnusedPrivateField" ruleset="Best Practices" package="sudoku" class="GrilleParser" variable="EMPTY" externalInfoUrl="https://pmd.github.io/pmd-6.53.0/pmd_rules_java_bestpractices.html#unusedprivatefield" priority="3">
+Avoid unused private fields such as 'EMPTY'.
+</violation>
+</file>
+</pmd>
