@@ -57,5 +57,9 @@ public class GrilleImpl implements Grille {
         
         throw new UnsupportedOperationException("Unimplemented method 'isValeurInitiale'");
     }
+
+    public void setElements(ElementDeGrille[] elements) {
+        this.elementDeGrilles = elements;
+    }
     
 }
