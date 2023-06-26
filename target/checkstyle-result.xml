@@ -4,38 +4,48 @@
 <error line="0" severity="error" message="Manquant fichier package-info.java." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
 <error line="3" severity="error" message="Commentaire javadoc manquant." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTypeCheck"/>
 <error line="4" column="5" severity="error" message="Commentaire javadoc manquant." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
-<error line="5" severity="error" message="La ligne excède 80 caractères." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="4" column="39" severity="error" message="Le paramètre message devrait être final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
 </file>
 <file name="E:\ggabri4\Documents\COURS_Master_1\Ingé_logiciel\sudo\src\main\java\interfaces\ElementInterditException.java">
 <error line="3" severity="error" message="Commentaire javadoc manquant." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTypeCheck"/>
 <error line="4" column="5" severity="error" message="Commentaire javadoc manquant." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="4" column="37" severity="error" message="Le paramètre message devrait être final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
 </file>
 <file name="E:\ggabri4\Documents\COURS_Master_1\Ingé_logiciel\sudo\src\main\java\interfaces\HorsBornesException.java">
 <error line="3" severity="error" message="Commentaire javadoc manquant." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTypeCheck"/>
 <error line="4" column="5" severity="error" message="Commentaire javadoc manquant." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="4" column="32" severity="error" message="Le paramètre message devrait être final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
 </file>
 <file name="E:\ggabri4\Documents\COURS_Master_1\Ingé_logiciel\sudo\src\main\java\interfaces\ValeurImpossibleException.java">
 <error line="3" severity="error" message="Commentaire javadoc manquant." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTypeCheck"/>
 <error line="4" column="5" severity="error" message="Commentaire javadoc manquant." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
-<error line="4" column="38" severity="error" message="Le paramètre msg devrait être final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="4" column="38" severity="error" message="Le paramètre message devrait être final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
 </file>
 <file name="E:\ggabri4\Documents\COURS_Master_1\Ingé_logiciel\sudo\src\main\java\interfaces\ValeurInitialeModificationException.java">
 <error line="3" severity="error" message="Commentaire javadoc manquant." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTypeCheck"/>
 <error line="4" column="5" severity="error" message="Commentaire javadoc manquant." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
-<error line="5" severity="error" message="La ligne excède 80 caractères." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="4" column="48" severity="error" message="Le paramètre message devrait être final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
 </file>
 <file name="E:\ggabri4\Documents\COURS_Master_1\Ingé_logiciel\sudo\src\main\java\sudoku\ElementDeGrille.java">
 <error line="0" severity="error" message="Il manque un caractère NewLine à la fin du fichier" source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
 <error line="0" severity="error" message="Manquant fichier package-info.java." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
+<error line="8" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="11" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="18" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
 </file>
 <file name="E:\ggabri4\Documents\COURS_Master_1\Ingé_logiciel\sudo\src\main\java\sudoku\ElementDeGrilleImplAsChar.java">
-<error line="3" severity="error" message="La première ligne doit se terminer avec un point." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocStyleCheck"/>
-<error line="5" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
-<error line="6" column="5" severity="error" message="Commentaire javadoc manquant." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
-<error line="8" column="5" severity="error" message="Commentaire javadoc manquant." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
-<error line="8" column="38" severity="error" message="Le paramètre value devrait être final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
-<error line="8" column="43" severity="error" message="&apos;value&apos; masque un attribut." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
-<error line="8" column="49" severity="error" message="Il manque une espace avant &apos;{&apos;." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="7" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="8" column="5" severity="error" message="Commentaire javadoc manquant." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
+<error line="11" severity="error" message="La ligne excède 80 caractères." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="12" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="15" column="38" severity="error" message="Le paramètre value devrait être final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="15" column="43" severity="error" message="&apos;value&apos; masque un attribut." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="21" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="24" column="5" severity="error" message="La méthode &apos;getValue&apos; n&apos;est pas conçue pour être dérivée - il faut la déclarer abstraite, finale ou la laisser vide." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="30" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="33" column="5" severity="error" message="La méthode &apos;setValue&apos; n&apos;est pas conçue pour être dérivée - il faut la déclarer abstraite, finale ou la laisser vide." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="33" column="26" severity="error" message="Le paramètre value devrait être final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="33" column="31" severity="error" message="&apos;value&apos; masque un attribut." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
 </file>
 <file name="E:\ggabri4\Documents\COURS_Master_1\Ingé_logiciel\sudo\src\main\java\sudoku\Grille.java">
 <error line="0" severity="error" message="Il manque un caractère NewLine à la fin du fichier" source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
@@ -59,43 +69,44 @@
 <error line="77" column="36" severity="error" message="Il manque une espace après &apos;,&apos;." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"/>
 </file>
 <file name="E:\ggabri4\Documents\COURS_Master_1\Ingé_logiciel\sudo\src\main\java\sudoku\GrilleImpl.java">
-<error line="10" severity="error" message="Commentaire javadoc manquant." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTypeCheck"/>
-<error line="12" column="5" severity="error" message="Commentaire javadoc manquant." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
-<error line="14" column="5" severity="error" message="Commentaire javadoc manquant." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
-<error line="14" column="23" severity="error" message="Le paramètre elementDeGrilles devrait être final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
-<error line="14" column="41" severity="error" message="&apos;elementDeGrilles&apos; masque un attribut." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
-<error line="14" column="58" severity="error" message="Il manque une espace avant &apos;{&apos;." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
-<error line="18" column="5" severity="error" message="La méthode &apos;getElements&apos; n&apos;est pas conçue pour être dérivée - il faut la déclarer abstraite, finale ou la laisser vide." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
-<error line="20" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
-<error line="21" severity="error" message="La ligne excède 80 caractères." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
-<error line="24" column="5" severity="error" message="La méthode &apos;getDimension&apos; n&apos;est pas conçue pour être dérivée - il faut la déclarer abstraite, finale ou la laisser vide." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
-<error line="26" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
-<error line="27" severity="error" message="La ligne excède 80 caractères." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="12" severity="error" message="Commentaire javadoc manquant." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTypeCheck"/>
+<error line="14" column="5" severity="error" message="Commentaire javadoc manquant." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
+<error line="15" column="5" severity="error" message="Commentaire javadoc manquant." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
+<error line="16" column="5" severity="error" message="Commentaire javadoc manquant." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
+<error line="18" column="5" severity="error" message="Commentaire javadoc manquant." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="18" column="23" severity="error" message="Le paramètre dimension devrait être final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="18" column="27" severity="error" message="&apos;dimension&apos; masque un attribut." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="23" column="5" severity="error" message="Commentaire javadoc manquant." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="23" column="23" severity="error" message="Le paramètre initialElements devrait être final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="26" severity="error" message="La ligne excède 80 caractères." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="29" column="13" severity="error" message="&apos;dimension&apos; masque un attribut." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
 <error line="31" severity="error" message="La ligne excède 80 caractères." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
-<error line="31" column="26" severity="error" message="Le paramètre x devrait être final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
-<error line="31" column="33" severity="error" message="Le paramètre y devrait être final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
-<error line="31" column="40" severity="error" message="Le paramètre value devrait être final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
 <error line="33" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
-<error line="36" column="5" severity="error" message="La méthode &apos;getValue&apos; n&apos;est pas conçue pour être dérivée - il faut la déclarer abstraite, finale ou la laisser vide." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
-<error line="37" column="37" severity="error" message="Le paramètre x devrait être final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
-<error line="37" column="44" severity="error" message="Le paramètre y devrait être final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
-<error line="38" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
-<error line="39" severity="error" message="La ligne excède 80 caractères." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
-<error line="42" column="5" severity="error" message="La méthode &apos;isComplete&apos; n&apos;est pas conçue pour être dérivée - il faut la déclarer abstraite, finale ou la laisser vide." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
-<error line="44" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
-<error line="45" severity="error" message="La ligne excède 80 caractères." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
-<error line="48" column="5" severity="error" message="La méthode &apos;isPossible&apos; n&apos;est pas conçue pour être dérivée - il faut la déclarer abstraite, finale ou la laisser vide." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
-<error line="49" column="31" severity="error" message="Le paramètre x devrait être final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
-<error line="49" column="38" severity="error" message="Le paramètre y devrait être final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
-<error line="49" column="45" severity="error" message="Le paramètre value devrait être final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
-<error line="51" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
-<error line="52" severity="error" message="La ligne excède 80 caractères." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
-<error line="55" column="5" severity="error" message="La méthode &apos;isValeurInitiale&apos; n&apos;est pas conçue pour être dérivée - il faut la déclarer abstraite, finale ou la laisser vide." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
-<error line="56" column="37" severity="error" message="Le paramètre x devrait être final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
-<error line="56" column="44" severity="error" message="Le paramètre y devrait être final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
-<error line="57" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="39" column="5" severity="error" message="La méthode &apos;getElements&apos; n&apos;est pas conçue pour être dérivée - il faut la déclarer abstraite, finale ou la laisser vide." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="41" column="30" severity="error" message="&apos;elements&apos; masque un attribut." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="52" column="5" severity="error" message="La méthode &apos;getDimension&apos; n&apos;est pas conçue pour être dérivée - il faut la déclarer abstraite, finale ou la laisser vide." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="57" column="5" severity="error" message="La méthode &apos;setValue&apos; n&apos;est pas conçue pour être dérivée - il faut la déclarer abstraite, finale ou la laisser vide." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
 <error line="58" severity="error" message="La ligne excède 80 caractères." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
-<error line="60" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="58" column="26" severity="error" message="Le paramètre x devrait être final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="58" column="33" severity="error" message="Le paramètre y devrait être final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="58" column="40" severity="error" message="Le paramètre value devrait être final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="66" severity="error" message="La ligne excède 80 caractères." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="73" severity="error" message="La ligne excède 80 caractères." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="85" severity="error" message="La ligne excède 80 caractères." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="94" column="5" severity="error" message="La méthode &apos;getValue&apos; n&apos;est pas conçue pour être dérivée - il faut la déclarer abstraite, finale ou la laisser vide." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="95" column="37" severity="error" message="Le paramètre x devrait être final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="95" column="44" severity="error" message="Le paramètre y devrait être final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="102" column="5" severity="error" message="La méthode &apos;isComplete&apos; n&apos;est pas conçue pour être dérivée - il faut la déclarer abstraite, finale ou la laisser vide." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="114" column="5" severity="error" message="La méthode &apos;isPossible&apos; n&apos;est pas conçue pour être dérivée - il faut la déclarer abstraite, finale ou la laisser vide." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="115" severity="error" message="La ligne excède 80 caractères." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="115" column="31" severity="error" message="Le paramètre x devrait être final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="115" column="38" severity="error" message="Le paramètre y devrait être final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="115" column="45" severity="error" message="Le paramètre value devrait être final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="116" severity="error" message="La ligne excède 80 caractères." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="121" column="5" severity="error" message="La méthode &apos;isValeurInitiale&apos; n&apos;est pas conçue pour être dérivée - il faut la déclarer abstraite, finale ou la laisser vide." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="122" column="37" severity="error" message="Le paramètre x devrait être final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="122" column="44" severity="error" message="Le paramètre y devrait être final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="123" severity="error" message="La ligne excède 80 caractères." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
 </file>
 <file name="E:\ggabri4\Documents\COURS_Master_1\Ingé_logiciel\sudo\src\main\java\sudoku\GrilleParser.java">
 <error line="0" severity="error" message="Il manque un caractère NewLine à la fin du fichier" source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>

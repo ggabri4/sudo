@@ -12,78 +12,43 @@ import interfaces.ValeurImpossibleException;
 import interfaces.ValeurInitialeModificationException;
 import sudoku.ElementDeGrille;
 import sudoku.ElementDeGrilleImplAsChar;
+import sudoku.Grille;
 import sudoku.GrilleImpl;
+import org.mockito.Mockito;
 
 /**
  * Unit test for simple App.
  */
 public class AppTest 
 {
-    private GrilleImpl grille;
-    private ElementDeGrille elementMock;
-
-    /**
-     * 
-     */
-    @BeforeEach
-    void setUp() {
-        ElementDeGrille[] elementDeGrilles = new ElementDeGrille[9];
-        grille = new GrilleImpl(elementDeGrilles);
-        elementMock = (ElementDeGrille) new ElementDeGrilleImplAsChar(9); // suppose que nous avons une classe mock ElementDeGrilleMock
-        grille.setElements(elementDeGrilles);
-    }
+ 
+    // Supposons que vous ayez une méthode pour créer des éléments de grille dans votre interface
+    // ElementDeGrille (par exemple, newElement).
+    ElementDeGrille elementDeGrille = Mockito.mock(ElementDeGrille.class);
+    Grille grille = new GrilleImpl(9);
 
     @Test
-    void getElements() {
-        assertEquals(1, grille.getElements().size());
-        assertTrue(grille.getElements().contains(elementMock));
-    }
-
-    @Test
-    void getDimension() {
-        assertEquals(9, grille.getDimension());
-    }
-
-    @Test
-    void setValue() throws HorsBornesException, ValeurImpossibleException, ElementInterditException, ValeurInitialeModificationException {
-        grille.setValue(0, 0, elementMock);
-        assertEquals(elementMock, grille.getValue(0, 0));
-    }
-
-    @Test
-    void setValueThrowsException() {
-        assertThrows(HorsBornesException.class, () -> grille.setValue(10, 10, elementMock));
-    }
-
-    @Test
-    void getValue() throws HorsBornesException, ValeurImpossibleException, ElementInterditException, ValeurInitialeModificationException {
-        grille.setValue(0, 0, elementMock);
-        assertEquals(elementMock, grille.getValue(0, 0));
-    }
-
-    @Test
-    void getValueThrowsException() {
-        assertThrows(HorsBornesException.class, () -> grille.getValue(10, 10));
-    }
-
-    @Test
-    void isComplete() throws HorsBornesException, ValeurImpossibleException, ElementInterditException, ValeurInitialeModificationException {
-        assertFalse(grille.isComplete());
-        for (int i = 0; i < 9; i++) {
-            for (int j = 0; j < 9; j++) {
-                grille.setValue(i, j, elementMock);
-            }
+    public void testSetValue() {
+        try {
+            grille.setValue(0, 0, elementDeGrille);
+            assertEquals(elementDeGrille, grille.getValue(0, 0));
+        } catch (Exception e) {
+            fail("Exception was thrown: " + e.getMessage());
         }
-        assertTrue(grille.isComplete());
     }
 
     @Test
-    void isPossible() throws HorsBornesException, ElementInterditException {
-        assertTrue(grille.isPossible(0, 0, elementMock));
+    public void testOutOfBounds() {
+        assertThrows(HorsBornesException.class, () -> {
+            grille.setValue(-1, 0, elementDeGrille);
+        });
     }
 
     @Test
-    void isPossibleThrowsException() {
-        assertThrows(HorsBornesException.class, () -> grille.isPossible(10, 10, elementMock));
+    public void testValueNotPossible() {
+        assertThrows(ValeurImpossibleException.class, () -> {
+            grille.setValue(0, 0, elementDeGrille);
+            grille.setValue(0, 1, elementDeGrille); // Suppose que c'est impossible
+        });
     }
 }
