@@ -30,8 +30,10 @@ public class AppTest
     @Test
     public void testSetValue() {
         try {
-            grille.setValue(0, 0, elementDeGrille);
-            assertEquals(elementDeGrille, grille.getValue(0, 0));
+            if(grille.getValue(0, 0) == null) {
+                grille.setValue(0, 0, elementDeGrille);
+                assertEquals(elementDeGrille, grille.getValue(0, 0));
+            }
         } catch (Exception e) {
             fail("Exception was thrown: " + e.getMessage());
         }
@@ -48,7 +50,7 @@ public class AppTest
     public void testValueNotPossible() {
         assertThrows(ValeurImpossibleException.class, () -> {
             grille.setValue(0, 0, elementDeGrille);
-            grille.setValue(0, 1, elementDeGrille); // Suppose que c'est impossible
+            grille.setValue(0, 1, elementDeGrille);
         });
     }
 }

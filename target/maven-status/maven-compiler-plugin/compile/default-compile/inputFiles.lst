@@ -1,11 +1,13 @@
-E:\ggabri4\Documents\COURS_Master_1\Ingé_logiciel\sudo\src\main\java\interfaces\ValeurImpossibleException.java
-E:\ggabri4\Documents\COURS_Master_1\Ingé_logiciel\sudo\src\main\java\interfaces\ElementInterditException.java
-E:\ggabri4\Documents\COURS_Master_1\Ingé_logiciel\sudo\src\main\java\sudoku\ElementDeGrille.java
+E:\ggabri4\Documents\COURS_Master_1\Ingé_logiciel\sudo\src\main\java\sudoku\package-info.java
 E:\ggabri4\Documents\COURS_Master_1\Ingé_logiciel\sudo\src\main\java\sudoku\ElementDeGrilleImplAsChar.java
 E:\ggabri4\Documents\COURS_Master_1\Ingé_logiciel\sudo\src\main\java\sudoku\Grille.java
 E:\ggabri4\Documents\COURS_Master_1\Ingé_logiciel\sudo\src\main\java\interfaces\HorsBornesException.java
 E:\ggabri4\Documents\COURS_Master_1\Ingé_logiciel\sudo\src\main\java\interfaces\ValeurInitialeModificationException.java
 E:\ggabri4\Documents\COURS_Master_1\Ingé_logiciel\sudo\src\main\java\interfaces\CaractereInterditException.java
 E:\ggabri4\Documents\COURS_Master_1\Ingé_logiciel\sudo\src\main\java\sudoku\Solveur.java
+E:\ggabri4\Documents\COURS_Master_1\Ingé_logiciel\sudo\src\main\java\interfaces\ValeurImpossibleException.java
+E:\ggabri4\Documents\COURS_Master_1\Ingé_logiciel\sudo\src\main\java\interfaces\ElementInterditException.java
+E:\ggabri4\Documents\COURS_Master_1\Ingé_logiciel\sudo\src\main\java\sudoku\ElementDeGrille.java
+E:\ggabri4\Documents\COURS_Master_1\Ingé_logiciel\sudo\src\main\java\interfaces\package-info.java
 E:\ggabri4\Documents\COURS_Master_1\Ingé_logiciel\sudo\src\main\java\sudoku\GrilleImpl.java
 E:\ggabri4\Documents\COURS_Master_1\Ingé_logiciel\sudo\src\main\java\sudoku\GrilleParser.java

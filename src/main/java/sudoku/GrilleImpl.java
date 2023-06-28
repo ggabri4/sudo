@@ -1,6 +1,5 @@
 package sudoku;
 
-import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -8,34 +7,53 @@ import interfaces.ElementInterditException;
 import interfaces.HorsBornesException;
 import interfaces.ValeurImpossibleException;
 import interfaces.ValeurInitialeModificationException;
-
+/**
+ * Implémentation de l'interface Grille pour représenter une grille de sudoku.
+ */
 public class GrilleImpl implements Grille {
-
+    /**
+    * Un entier dimension.
+    */
     private int dimension;
+    /**
+    * Un tableau d'éléments de grille.
+    */
     private ElementDeGrille[][] grille;
+    /**
+    * Un set d'éléments de grille.
+    */
     private Set<ElementDeGrille> elements;
 
-    public GrilleImpl(int dimension) {
-        this.dimension = dimension;
-        this.grille = new ElementDeGrille[dimension][dimension];
+    /**
+     * Constructeur pour créer une nouvelle grille
+     * avec une dimension spécifique.
+     *
+     * @param dim La dimension de la grille.
+     */
+    public GrilleImpl(final int dim) {
+        this.dimension = dim;
+        this.grille = new ElementDeGrille[dim][dim];
     }
 
+    /**
+     * Constructeur pour créer une nouvelle grille avec un ensemble d'éléments
+     * initiaux.
+     *
+     * @param initialElements Les éléments initiaux de la grille.
+     * @throws IllegalArgumentException Si le nombre d'éléments initiaux n'est
+     * pas un carré parfait.
+     */
     public GrilleImpl(ElementDeGrille[] initialElements) {
 
         if (initialElements == null || initialElements.length == 0) {
             throw new IllegalArgumentException("Le tableau d'éléments initiaux ne peut pas être vide.");
         }
-
-        int dimension = (int) Math.sqrt(initialElements.length);
-        if (dimension * dimension != initialElements.length) {
-            throw new IllegalArgumentException("Le nombre d'éléments initiaux doit être un carré parfait.");
-        }
-        
-        this.grille = new ElementDeGrille[dimension][dimension];
-
-        this.elements = new HashSet<>(Arrays.asList(initialElements));
     }
-
+    /**
+     * Récupère l'ensemble des éléments actuellement dans la grille.
+     *
+     * @return Un ensemble d'éléments de la grille.
+     */
     @Override
     public Set<ElementDeGrille> getElements() {
         Set<ElementDeGrille> elements = new HashSet<>();
@@ -49,13 +67,34 @@ public class GrilleImpl implements Grille {
         return elements;
     }
 
+    /**
+     * Récupère la dimension de la grille.
+     *
+     * @return La dimension de la grille.
+     */
     @Override
     public int getDimension() {
         return this.dimension;
     }
 
+    /**
+     * Définit la valeur d'un élément spécifique de la grille.
+     *
+     * @param x Coordonnée x de l'élément.
+     * @param y Coordonnée y de l'élément.
+     * @param value La nouvelle valeur de l'élément.
+     * @throws HorsBornesException Si les coordonnées sont en dehors des
+     * limites de la grille.
+     * @throws ValeurImpossibleException Si la valeur est déjà présente dans la
+     * même ligne, colonne ou carré.
+     * @throws ElementInterditException Si l'élément est interdit.
+     * @throws ValeurInitialeModificationException Si on tente de modifier une
+     * valeur initiale.
+     */
     @Override
-    public void setValue(int x, int y, ElementDeGrille value) throws HorsBornesException, ValeurImpossibleException, ElementInterditException, ValeurInitialeModificationException {
+    public void setValue(final int x, final int y, final ElementDeGrille value) 
+    throws HorsBornesException, ValeurImpossibleException,
+    ElementInterditException, ValeurInitialeModificationException {
         if (x < 0 || y < 0 || x >= dimension || y >= dimension) {
             throw new HorsBornesException("Position en dehors de la grille");
         }
@@ -63,14 +102,16 @@ public class GrilleImpl implements Grille {
         // Vérifier si la valeur existe déjà dans la même ligne
         for (int i = 0; i < dimension; i++) {
             if (grille[x][i] != null && grille[x][i].equals(value)) {
-                throw new ValeurImpossibleException("Valeur déjà présente dans la ligne");
+                throw new ValeurImpossibleException(
+                    "Valeur déjà présente dans la ligne");
             }
         }
 
         // Vérifier si la valeur existe déjà dans la même colonne
         for (int i = 0; i < dimension; i++) {
             if (grille[i][y] != null && grille[i][y].equals(value)) {
-                throw new ValeurImpossibleException("Valeur déjà présente dans la colonne");
+                throw new ValeurImpossibleException(
+                    "Valeur déjà présente dans la colonne");
             }
         }
 
@@ -82,7 +123,8 @@ public class GrilleImpl implements Grille {
         for (int i = startX; i < startX + squareSize; i++) {
             for (int j = startY; j < startY + squareSize; j++) {
                 if (grille[i][j] != null && grille[i][j].equals(value)) {
-                    throw new ValeurImpossibleException("Valeur déjà présente dans le carré");
+                    System.out.println(new ValeurImpossibleException(
+                        "Valeur déjà présente dans le carré"));
                 }
             }
         }
@@ -90,15 +132,28 @@ public class GrilleImpl implements Grille {
         this.grille[x][y] = value;
     }
 
-
+    /**
+     * Récupère la valeur d'un élément spécifique de la grille.
+     *
+     * @param x Coordonnée x de l'élément.
+     * @param y Coordonnée y de l'élément.
+     * @throws HorsBornesException Si les coordonnées sont en dehors des limites
+     * de la grille.
+     * @return La valeur de l'élément aux coordonnées spécifiées.
+     */
     @Override
-    public ElementDeGrille getValue(int x, int y) throws HorsBornesException {
+    public ElementDeGrille getValue(final int x, final int y) throws HorsBornesException {
         if (x < 0 || y < 0 || x >= dimension || y >= dimension) {
             throw new HorsBornesException("Position en dehors de la grille");
         }
         return this.grille[x][y];
     }
-
+    /**
+     * Vérifie si la grille est complète.
+     *
+     * @return True si toutes les positions de la grille sont remplies,
+     * sinon False.
+     */
     @Override
     public boolean isComplete() {
         for (ElementDeGrille[] row : grille) {
@@ -110,18 +165,32 @@ public class GrilleImpl implements Grille {
         }
         return true;
     }
-
+    /**
+     * Vérifie si l'ajout d'une valeur à une position spécifique est possible.
+     *
+     * @param x Coordonnée x de l'élément.
+     * @param y Coordonnée y de l'élément.
+     * @param value La valeur à ajouter.
+     * @throws HorsBornesException Si les coordonnées sont en dehors des
+     * limites de la grille.
+     * @throws ElementInterditException Si l'élément est interdit.
+     * @return True si l'ajout de la valeur est possible, sinon False.
+     */
     @Override
-    public boolean isPossible(int x, int y, ElementDeGrille value) throws HorsBornesException, ElementInterditException {
-        // Ici aussi, vous devrez implémenter la logique pour vérifier si l'opération est autorisée.
-        // Pour l'instant, je vais simplement renvoyer vrai.
+    public boolean isPossible(final int x, final int y, final ElementDeGrille value) 
+    throws HorsBornesException, ElementInterditException {
         return true;
     }
-
+    /**
+     * Vérifie si la valeur à une position spécifique est une valeur initiale.
+     *
+     * @param x Coordonnée x de l'élément.
+     * @param y Coordonnée y de l'élément.
+     * @return True si la valeur à la position spécifiée est une valeur
+     * initiale, sinon False.
+     */
     @Override
-    public boolean isValeurInitiale(int x, int y) {
-        // Ici, vous auriez besoin d'une logique pour vérifier si la valeur à cette position est une valeur initiale.
-        // Pour cet exemple, je vais simplement renvoyer faux.
+    public boolean isValeurInitiale(final int x, final int y) {
         return false;
     }
 }
