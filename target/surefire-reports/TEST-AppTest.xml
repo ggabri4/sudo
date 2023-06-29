@@ -17,7 +17,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="FR"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Microsoft\jdk-11.0.12.7-hotspot\bin"/>
-    <property name="sun.java.command" value="C:\Users\Steven\AppData\Local\Temp\surefire12633984935465577180\surefirebooter16468243760347102062.jar C:\Users\Steven\AppData\Local\Temp\surefire12633984935465577180 2023-06-29T17-06-38_280-jvmRun1 surefire3067934721787351853tmp surefire_012813967286890985185tmp"/>
+    <property name="sun.java.command" value="C:\Users\Steven\AppData\Local\Temp\surefire12883875311368704449\surefirebooter17054327065442475551.jar C:\Users\Steven\AppData\Local\Temp\surefire12883875311368704449 2023-06-29T17-17-48_881-jvmRun1 surefire6788931677694610235tmp surefire_05836475439635485062tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\Steven\OneDrive\Documents\Cours_université\Master_MIAGE\Semestre_2\Ingénérie_du_logiciel\Activité_2\sudo\target\test-classes;C:\Users\Steven\OneDrive\Documents\Cours_université\Master_MIAGE\Semestre_2\Ingénérie_du_logiciel\Activité_2\sudo\target\classes;C:\Users\Steven\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.0-M1\junit-jupiter-api-5.10.0-M1.jar;C:\Users\Steven\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\Steven\.m2\repository\org\junit\platform\junit-platform-commons\1.10.0-M1\junit-platform-commons-1.10.0-M1.jar;C:\Users\Steven\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Steven\.m2\repository\org\mockito\mockito-core\3.11.2\mockito-core-3.11.2.jar;C:\Users\Steven\.m2\repository\net\bytebuddy\byte-buddy\1.11.3\byte-buddy-1.11.3.jar;C:\Users\Steven\.m2\repository\net\bytebuddy\byte-buddy-agent\1.11.3\byte-buddy-agent-1.11.3.jar;C:\Users\Steven\.m2\repository\org\objenesis\objenesis\3.2\objenesis-3.2.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -33,7 +33,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\Steven\AppData\Local\Temp\surefire12633984935465577180\surefirebooter16468243760347102062.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Steven\AppData\Local\Temp\surefire12883875311368704449\surefirebooter17054327065442475551.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="11.0.12+7"/>
@@ -60,9 +60,9 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="AppTest.testIsValeurInitiale" classname="AppTest" time="0.002"/>
-  <testcase name="AppTest.testIsPossible" classname="AppTest" time="0"/>
-  <testcase name="AppTest.testGetValue" classname="AppTest" time="0"/>
-  <testcase name="AppTest.testIsComplete" classname="AppTest" time="0"/>
   <testcase name="AppTest.testSetValue" classname="AppTest" time="0.001"/>
+  <testcase name="AppTest.testGetValue" classname="AppTest" time="0"/>
+  <testcase name="AppTest.testIsComplete" classname="AppTest" time="0.001"/>
+  <testcase name="AppTest.testIsPossible" classname="AppTest" time="0"/>
+  <testcase name="AppTest.testIsValeurInitiale" classname="AppTest" time="0"/>
 </testsuite>

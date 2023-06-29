@@ -53,7 +53,7 @@ public class GrilleImpl implements Grille {
      * @return Un ensemble d'éléments de la grille.
      */
     @Override
-    public Set<ElementDeGrille> getElements() {
+    public final Set<ElementDeGrille> getElements() {
 
         throw new UnsupportedOperationException(
                 "Unimplemented method 'getElements'");
@@ -164,10 +164,10 @@ public class GrilleImpl implements Grille {
     /**
      * initialise la grille.
      *
-     * @param elements la grille d'éléments.
+     * @param inputElements la grille d'éléments.
      */
-    public final void setElements(final ElementDeGrille[] elements) {
-        this.elementDeGrilles = elements;
+    public final void setElements(final ElementDeGrille[] inputElements) {
+        this.elementDeGrilles = inputElements;
     }
 
 }

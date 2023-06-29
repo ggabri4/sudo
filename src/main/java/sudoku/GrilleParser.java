@@ -69,7 +69,9 @@ public final class GrilleParser {
             }
             final int dimension = line.length() - 1;
             final char vide = line.charAt(0);
-            Map<Character, ElementDeGrille> elementDeGrilleMap = new HashMap<>();
+            Map<Character, ElementDeGrille> elementDeGrilleMap
+
+                    = new HashMap<>();
             for (int i = 1; i < line.length(); i++) {
                 char value = line.charAt(i);
                 if (value == vide) {
@@ -102,8 +104,9 @@ public final class GrilleParser {
                 for (int j = 0; j < dimension; j++) {
                     char c = line.charAt(j);
                     if (c != vide) {
-                        ElementDeGrille elementDeGrille = elementDeGrilleMap.get(
-                                c);
+                        ElementDeGrille elementDeGrille =
+
+                                elementDeGrilleMap.get(c);
                         if (elementDeGrille == null) {
                             throw new ValeurImpossibleException(
                                     String.valueOf(c));
