@@ -1,8 +1,5 @@
 import static org.junit.jupiter.api.Assertions.*;
 
-import java.util.HashSet;
-import java.util.Set;
-
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -11,14 +8,12 @@ import interfaces.HorsBornesException;
 import interfaces.ValeurImpossibleException;
 import interfaces.ValeurInitialeModificationException;
 import sudoku.ElementDeGrille;
-import sudoku.ElementDeGrilleImplAsChar;
 import sudoku.GrilleImpl;
 
 /**
  * Unit test for simple App.
  */
-public class AppTest 
-{
+public class AppTest {
     private GrilleImpl grille;
     private ElementDeGrille elementMock;
 
@@ -29,7 +24,9 @@ public class AppTest
     void setUp() {
         ElementDeGrille[] elementDeGrilles = new ElementDeGrille[9];
         grille = new GrilleImpl(elementDeGrilles);
-        elementMock = (ElementDeGrille) new ElementDeGrilleImplAsChar(9); // suppose que nous avons une classe mock ElementDeGrilleMock
+        // elementMock = (ElementDeGrille) new ElementDeGrilleImplAsChar(9); // suppose
+        // que nous avons une classe mock
+        // ElementDeGrilleMock
         grille.setElements(elementDeGrilles);
     }
 
@@ -45,7 +42,8 @@ public class AppTest
     }
 
     @Test
-    void setValue() throws HorsBornesException, ValeurImpossibleException, ElementInterditException, ValeurInitialeModificationException {
+    void setValue() throws HorsBornesException, ValeurImpossibleException, ElementInterditException,
+            ValeurInitialeModificationException {
         grille.setValue(0, 0, elementMock);
         assertEquals(elementMock, grille.getValue(0, 0));
     }
@@ -56,7 +54,8 @@ public class AppTest
     }
 
     @Test
-    void getValue() throws HorsBornesException, ValeurImpossibleException, ElementInterditException, ValeurInitialeModificationException {
+    void getValue() throws HorsBornesException, ValeurImpossibleException, ElementInterditException,
+            ValeurInitialeModificationException {
         grille.setValue(0, 0, elementMock);
         assertEquals(elementMock, grille.getValue(0, 0));
     }
@@ -67,7 +66,8 @@ public class AppTest
     }
 
     @Test
-    void isComplete() throws HorsBornesException, ValeurImpossibleException, ElementInterditException, ValeurInitialeModificationException {
+    void isComplete() throws HorsBornesException, ValeurImpossibleException, ElementInterditException,
+            ValeurInitialeModificationException {
         assertFalse(grille.isComplete());
         for (int i = 0; i < 9; i++) {
             for (int j = 0; j < 9; j++) {
