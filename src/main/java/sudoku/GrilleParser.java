@@ -1,6 +1,5 @@
 package sudoku;
 
-
 import interfaces.*;
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -9,10 +8,13 @@ import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
 import java.util.Map;
+import java.lang.Character;
 
 /**
- * Méthodes utilitaire permettant de créer une Grille à partir d'un fichier texte.
- * Il est attendu que la première ligne contiennet : le symbole de case vide, suivi des symboles possibles dans la grille (en UTF-8).
+ * Méthodes utilitaire permettant de créer une Grille à partir d'un fichier
+ * texte.
+ * Il est attendu que la première ligne contiennet : le symbole de case vide,
+ * suivi des symboles possibles dans la grille (en UTF-8).
  * Les autres lignes contiennent le contenu de la grille.
  * <p>
  * Exemple:
@@ -25,7 +27,7 @@ import java.util.Map;
  * @author Sébastien Choplin <sebastien.choplin@u-picardie.fr>
  */
 public class GrilleParser {
-    private static final char EMPTY = '-';
+    // private static final char EMPTY = '-';
 
     /**
      * constructeur.
@@ -41,9 +43,9 @@ public class GrilleParser {
      * @throws ValeurImpossibleException si la grille ne respècte pas les règles
      */
     public static Grille parse(final InputStream in)
-            throws IOException, ElementInterditException, ValeurInitialeModificationException, HorsBornesException, ValeurImpossibleException {
+            throws IOException, ElementInterditException, ValeurInitialeModificationException, HorsBornesException,
+            ValeurImpossibleException {
         try (BufferedReader reader = new BufferedReader(new InputStreamReader(in, StandardCharsets.UTF_8))) {
-
 
             String line = reader.readLine();
             if (line == null || line.length() == 0) {
@@ -61,12 +63,13 @@ public class GrilleParser {
                     throw new IllegalArgumentException("valeur possible dupliquée : " + value);
                 }
                 elementDeGrilleMap.put(value, new ElementDeGrilleImplAsChar(value));
+
             }
 
             if (elementDeGrilleMap.size() != dimension) {
                 throw new IllegalArgumentException("pas le bon nombre de valeurs possibles");
             }
-            ElementDeGrille[] elementDeGrilles = elementDeGrilleMap.values().toArray(new ElementDeGrille[]{});
+            ElementDeGrille[] elementDeGrilles = elementDeGrilleMap.values().toArray(new ElementDeGrille[] {});
             Grille grille = new GrilleImpl(elementDeGrilles);
 
             for (int i = 0; i < dimension; i++) {
@@ -85,7 +88,6 @@ public class GrilleParser {
                     }
                 }
             }
-
 
             return grille;
         }
