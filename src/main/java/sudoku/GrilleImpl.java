@@ -65,7 +65,7 @@ public class GrilleImpl implements Grille {
      * @return La dimension de la grille.
      */
     @Override
-    public int getDimension() {
+    public final int getDimension() {
 
         throw new UnsupportedOperationException(
                 "Unimplemented method 'getDimension'");
@@ -107,7 +107,7 @@ public class GrilleImpl implements Grille {
      * @return La valeur de l'élément aux coordonnées spécifiées.
      */
     @Override
-    public ElementDeGrille getValue(final int x,
+    public final ElementDeGrille getValue(final int x,
             final int y) throws HorsBornesException {
         throw new UnsupportedOperationException(
                 "Unimplemented method 'getValue'");
@@ -120,7 +120,7 @@ public class GrilleImpl implements Grille {
      *         sinon False.
      */
     @Override
-    public boolean isComplete() {
+    public final boolean isComplete() {
 
         throw new UnsupportedOperationException(
                 "Unimplemented method 'isComplete'");
@@ -138,7 +138,7 @@ public class GrilleImpl implements Grille {
      * @return True si l'ajout de la valeur est possible, sinon False.
      */
     @Override
-    public boolean isPossible(final int x,
+    public final boolean isPossible(final int x,
             final int y, final ElementDeGrille value)
             throws HorsBornesException, ElementInterditException {
 
@@ -155,7 +155,7 @@ public class GrilleImpl implements Grille {
      *         initiale, sinon False.
      */
     @Override
-    public boolean isValeurInitiale(final int x, final int y) {
+    public final boolean isValeurInitiale(final int x, final int y) {
 
         throw new UnsupportedOperationException(
                 "Unimplemented method 'isValeurInitiale'");
@@ -166,7 +166,7 @@ public class GrilleImpl implements Grille {
      *
      * @param elements la grille d'éléments.
      */
-    public void setElements(final ElementDeGrille[] elements) {
+    public final void setElements(final ElementDeGrille[] elements) {
         this.elementDeGrilles = elements;
     }
 

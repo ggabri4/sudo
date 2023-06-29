@@ -60,7 +60,8 @@ public final class GrilleParser {
             throws IOException, ElementInterditException,
             ValeurInitialeModificationException, HorsBornesException,
             ValeurImpossibleException {
-        try (BufferedReader reader = new BufferedReader(new InputStreamReader(in, StandardCharsets.UTF_8))) {
+        try (BufferedReader reader = new BufferedReader(
+                new InputStreamReader(in, StandardCharsets.UTF_8))) {
 
             String line = reader.readLine();
             if (line == null || line.length() == 0) {
@@ -78,7 +79,8 @@ public final class GrilleParser {
                     throw new IllegalArgumentException(
                             "valeur possible dupliquée : " + value);
                 }
-                elementDeGrilleMap.put(value, new ElementDeGrilleImplAsChar(value));
+                elementDeGrilleMap.put(
+                        value, new ElementDeGrilleImplAsChar(value));
 
             }
 
@@ -86,7 +88,9 @@ public final class GrilleParser {
                 throw new IllegalArgumentException(
                         "pas le bon nombre de valeurs possibles");
             }
-            ElementDeGrille[] elementDeGrilles = elementDeGrilleMap.values().toArray(new ElementDeGrille[] {});
+            ElementDeGrille[] elementDeGrilles = elementDeGrilleMap.values(
+
+            ).toArray(new ElementDeGrille[] {});
             Grille grille = new GrilleImpl(elementDeGrilles);
 
             for (int i = 0; i < dimension; i++) {
@@ -98,9 +102,11 @@ public final class GrilleParser {
                 for (int j = 0; j < dimension; j++) {
                     char c = line.charAt(j);
                     if (c != vide) {
-                        ElementDeGrille elementDeGrille = elementDeGrilleMap.get(c);
+                        ElementDeGrille elementDeGrille = elementDeGrilleMap.get(
+                                c);
                         if (elementDeGrille == null) {
-                            throw new ValeurImpossibleException(String.valueOf(c));
+                            throw new ValeurImpossibleException(
+                                    String.valueOf(c));
                         }
                         grille.setValue(i, j, elementDeGrille);
                     }
