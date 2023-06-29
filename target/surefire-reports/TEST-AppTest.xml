@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="AppTest" time="0.004" tests="5" errors="0" skipped="0" failures="0">
+=======
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="AppTest" time="0.003" tests="3" errors="0" skipped="0" failures="0">
+>>>>>>> ea7796d508c35d21617b55d238698a9305fd724f
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
     <property name="java.specification.version" value="11"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
+<<<<<<< HEAD
     <property name="java.class.path" value="C:\Users\Steven\OneDrive\Documents\Cours_université\Master_MIAGE\Semestre_2\Ingénérie_du_logiciel\Activité_2\sudo\target\test-classes;C:\Users\Steven\OneDrive\Documents\Cours_université\Master_MIAGE\Semestre_2\Ingénérie_du_logiciel\Activité_2\sudo\target\classes;C:\Users\Steven\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.0-M1\junit-jupiter-api-5.10.0-M1.jar;C:\Users\Steven\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\Steven\.m2\repository\org\junit\platform\junit-platform-commons\1.10.0-M1\junit-platform-commons-1.10.0-M1.jar;C:\Users\Steven\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;"/>
     <property name="java.vm.vendor" value="Microsoft"/>
+=======
+    <property name="java.class.path" value="E:\ggabri4\Documents\COURS_Master_1\Ingé_logiciel\sudo\target\test-classes;E:\ggabri4\Documents\COURS_Master_1\Ingé_logiciel\sudo\target\classes;C:\Users\ggabr\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.0-M1\junit-jupiter-api-5.10.0-M1.jar;C:\Users\ggabr\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\ggabr\.m2\repository\org\junit\platform\junit-platform-commons\1.10.0-M1\junit-platform-commons-1.10.0-M1.jar;C:\Users\ggabr\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\ggabr\.m2\repository\org\mockito\mockito-core\3.11.2\mockito-core-3.11.2.jar;C:\Users\ggabr\.m2\repository\net\bytebuddy\byte-buddy\1.11.3\byte-buddy-1.11.3.jar;C:\Users\ggabr\.m2\repository\net\bytebuddy\byte-buddy-agent\1.11.3\byte-buddy-agent-1.11.3.jar;C:\Users\ggabr\.m2\repository\org\objenesis\objenesis\3.2\objenesis-3.2.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+>>>>>>> ea7796d508c35d21617b55d238698a9305fd724f
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
     <property name="java.vendor.url" value="https://www.microsoft.com"/>
@@ -16,10 +25,17 @@
     <property name="os.name" value="Windows 10"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="FR"/>
+<<<<<<< HEAD
     <property name="sun.boot.library.path" value="C:\Program Files\Microsoft\jdk-11.0.12.7-hotspot\bin"/>
     <property name="sun.java.command" value="C:\Users\Steven\AppData\Local\Temp\surefire14227233262620393975\surefirebooter10598564720184024057.jar C:\Users\Steven\AppData\Local\Temp\surefire14227233262620393975 2023-06-29T13-04-04_759-jvmRun1 surefire4173761014080562251tmp surefire_08698841604224486815tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\Steven\OneDrive\Documents\Cours_université\Master_MIAGE\Semestre_2\Ingénérie_du_logiciel\Activité_2\sudo\target\test-classes;C:\Users\Steven\OneDrive\Documents\Cours_université\Master_MIAGE\Semestre_2\Ingénérie_du_logiciel\Activité_2\sudo\target\classes;C:\Users\Steven\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.0-M1\junit-jupiter-api-5.10.0-M1.jar;C:\Users\Steven\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\Steven\.m2\repository\org\junit\platform\junit-platform-commons\1.10.0-M1\junit-platform-commons-1.10.0-M1.jar;C:\Users\Steven\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;"/>
+=======
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17.0.1\bin"/>
+    <property name="sun.java.command" value="C:\Users\ggabr\AppData\Local\Temp\surefire4705940269790244297\surefirebooter2776249575679408005.jar C:\Users\ggabr\AppData\Local\Temp\surefire4705940269790244297 2023-06-26T18-00-37_148-jvmRun1 surefire1051853253191814198tmp surefire_08459059939146165029tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="E:\ggabri4\Documents\COURS_Master_1\Ingé_logiciel\sudo\target\test-classes;E:\ggabri4\Documents\COURS_Master_1\Ingé_logiciel\sudo\target\classes;C:\Users\ggabr\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.0-M1\junit-jupiter-api-5.10.0-M1.jar;C:\Users\ggabr\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\ggabr\.m2\repository\org\junit\platform\junit-platform-commons\1.10.0-M1\junit-platform-commons-1.10.0-M1.jar;C:\Users\ggabr\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\ggabr\.m2\repository\org\mockito\mockito-core\3.11.2\mockito-core-3.11.2.jar;C:\Users\ggabr\.m2\repository\net\bytebuddy\byte-buddy\1.11.3\byte-buddy-1.11.3.jar;C:\Users\ggabr\.m2\repository\net\bytebuddy\byte-buddy-agent\1.11.3\byte-buddy-agent-1.11.3.jar;C:\Users\ggabr\.m2\repository\org\objenesis\objenesis\3.2\objenesis-3.2.jar;"/>
+>>>>>>> ea7796d508c35d21617b55d238698a9305fd724f
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\Steven"/>
     <property name="user.language" value="fr"/>
@@ -31,9 +47,13 @@
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
+<<<<<<< HEAD
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
     <property name="surefire.real.class.path" value="C:\Users\Steven\AppData\Local\Temp\surefire14227233262620393975\surefirebooter10598564720184024057.jar"/>
+=======
+    <property name="surefire.real.class.path" value="C:\Users\ggabr\AppData\Local\Temp\surefire4705940269790244297\surefirebooter2776249575679408005.jar"/>
+>>>>>>> ea7796d508c35d21617b55d238698a9305fd724f
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="11.0.12+7"/>
@@ -60,9 +80,15 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
+<<<<<<< HEAD
   <testcase name="AppTest.testIsValeurInitiale" classname="AppTest" time="0"/>
   <testcase name="AppTest.testSetValue" classname="AppTest" time="0"/>
   <testcase name="AppTest.testIsComplete" classname="AppTest" time="0"/>
   <testcase name="AppTest.testGetValue" classname="AppTest" time="0"/>
   <testcase name="AppTest.testIsPossible" classname="AppTest" time="0"/>
+=======
+  <testcase name="AppTest.testValueNotPossible" classname="AppTest" time="0.001"/>
+  <testcase name="AppTest.testSetValue" classname="AppTest" time="0"/>
+  <testcase name="AppTest.testOutOfBounds" classname="AppTest" time="0"/>
+>>>>>>> ea7796d508c35d21617b55d238698a9305fd724f
 </testsuite>

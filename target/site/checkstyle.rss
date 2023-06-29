@@ -25,8 +25,13 @@ under the License.
     <language>en-us</language>
     <copyright>&#169;2023</copyright>
     <item>
+<<<<<<< HEAD
       <title>File: 11,
              Errors: 88,
+=======
+      <title>File: 5,
+             Errors: 39,
+>>>>>>> ea7796d508c35d21617b55d238698a9305fd724f
              Warnings: 0,
              Infos: 0
       </title>
@@ -47,20 +52,6 @@ under the License.
                           <tr>
                 <td>
                   <a href="http://www.example.com/checkstyle.html#sudoku.Solveur.java">sudoku/Solveur.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  2
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="http://www.example.com/checkstyle.html#interfaces.HorsBornesException.java">interfaces/HorsBornesException.java</a>
                 </td>
                 <td>
                   0
@@ -97,6 +88,7 @@ under the License.
                   0
                 </td>
                 <td>
+<<<<<<< HEAD
                   18
                 </td>
               </tr>
@@ -140,6 +132,9 @@ under the License.
                 </td>
                 <td>
                   3
+=======
+                  1
+>>>>>>> ea7796d508c35d21617b55d238698a9305fd724f
                 </td>
               </tr>
                           <tr>
@@ -167,6 +162,7 @@ under the License.
                   0
                 </td>
                 <td>
+<<<<<<< HEAD
                   31
                 </td>
               </tr>
@@ -196,6 +192,9 @@ under the License.
                 </td>
                 <td>
                   4
+=======
+                  14
+>>>>>>> ea7796d508c35d21617b55d238698a9305fd724f
                 </td>
               </tr>
                       </tbody>

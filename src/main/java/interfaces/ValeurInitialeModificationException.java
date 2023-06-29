@@ -1,7 +1,18 @@
 package interfaces;
 
+/**
+ * Exception pour une valeur ...
+ */
 public class ValeurInitialeModificationException extends Exception {
-    public ValeurInitialeModificationException() {
-        super("La tentative de modification d'une valeur initiale de la grille est interdite.");
+
+    /**
+     * Constructeur pour créer une nouvelle
+     * exception avec un message spécifique.
+     *
+     * @param message le message détaillant la raison
+     * pour laquelle l'exception a été levée.
+     */
+    public ValeurInitialeModificationException(final String message) {
+        super(message);
     }
 }

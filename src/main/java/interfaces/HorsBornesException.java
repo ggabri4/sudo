@@ -1,7 +1,18 @@
 package interfaces;
 
+/**
+ * Exception pour une valeur ...
+ */
 public class HorsBornesException extends Exception {
-    public HorsBornesException() {
-        super("Les paramètres de positions sont hors des bornes de la grille.");
+
+    /**
+     * Constructeur pour créer une nouvelle
+     * exception avec un message spécifique.
+     *
+     * @param message le message détaillant la raison
+     * pour laquelle l'exception a été levée.
+     */
+    public HorsBornesException(final String message) {
+        super(message);
     }
 }
