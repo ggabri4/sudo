@@ -1,8 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: AppTest
 -------------------------------------------------------------------------------
-<<<<<<< HEAD
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in AppTest
-=======
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in AppTest
->>>>>>> ea7796d508c35d21617b55d238698a9305fd724f
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in AppTest

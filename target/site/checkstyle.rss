@@ -25,13 +25,8 @@ under the License.
     <language>en-us</language>
     <copyright>&#169;2023</copyright>
     <item>
-<<<<<<< HEAD
-      <title>File: 11,
-             Errors: 88,
-=======
-      <title>File: 5,
-             Errors: 39,
->>>>>>> ea7796d508c35d21617b55d238698a9305fd724f
+      <title>File: 4,
+             Errors: 56,
              Warnings: 0,
              Infos: 0
       </title>
@@ -65,49 +60,6 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="http://www.example.com/checkstyle.html#sudoku.ElementDeGrille.java">sudoku/ElementDeGrille.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  1
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="http://www.example.com/checkstyle.html#sudoku.Grille.java">sudoku/Grille.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-<<<<<<< HEAD
-                  18
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="http://www.example.com/checkstyle.html#interfaces.ElementInterditException.java">interfaces/ElementInterditException.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  2
-                </td>
-              </tr>
-                          <tr>
-                <td>
                   <a href="http://www.example.com/checkstyle.html#sudoku.ElementDeGrilleImplAsChar.java">sudoku/ElementDeGrilleImplAsChar.java</a>
                 </td>
                 <td>
@@ -118,23 +70,6 @@ under the License.
                 </td>
                 <td>
                   5
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="http://www.example.com/checkstyle.html#interfaces.ValeurImpossibleException.java">interfaces/ValeurImpossibleException.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  3
-=======
-                  1
->>>>>>> ea7796d508c35d21617b55d238698a9305fd724f
                 </td>
               </tr>
                           <tr>
@@ -162,39 +97,7 @@ under the License.
                   0
                 </td>
                 <td>
-<<<<<<< HEAD
-                  31
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="http://www.example.com/checkstyle.html#interfaces.ValeurInitialeModificationException.java">interfaces/ValeurInitialeModificationException.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  3
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="http://www.example.com/checkstyle.html#interfaces.CaractereInterditException.java">interfaces/CaractereInterditException.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  4
-=======
-                  14
->>>>>>> ea7796d508c35d21617b55d238698a9305fd724f
+                  32
                 </td>
               </tr>
                       </tbody>
