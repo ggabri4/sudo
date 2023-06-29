@@ -12,32 +12,38 @@ import interfaces.ValeurInitialeModificationException;
  */
 public class GrilleImpl implements Grille {
     /**
-     * Un entier dimension.
+     * @param dimension un entier.
      */
     private int dimension;
+
     /**
-     * Un tableau d'éléments de grille.
+     * @param grille tableau d'éléments de grille.
      */
     private ElementDeGrille[][] grille;
+
     /**
-     * Un set d'éléments de grille.
+     * @param elements Un set d'éléments de grille.
      */
     private Set<ElementDeGrille> elements;
 
+    /**
+     * @param elements tableau d'éléments de grille.
+     */
     private ElementDeGrille[] elementDeGrilles;
 
     /**
-     * Constructeur pour créer une nouvelle grille avec un ensemble d'éléments
+     * Constructeur pour créser une nouvelle grille avec un ensemble d'éléments
      * initiaux.
      *
      * @param initialElements Les éléments initiaux de la grille.
      * @throws IllegalArgumentException Si le nombre d'éléments initiaux n'est
      *                                  pas un carré parfait.
      */
-    public GrilleImpl(ElementDeGrille[] initialElements) {
+    public GrilleImpl(final ElementDeGrille[] initialElements) {
 
         if (initialElements == null || initialElements.length == 0) {
-            throw new IllegalArgumentException("Le tableau d'éléments initiaux ne peut pas être vide.");
+            throw new IllegalArgumentException(
+                    "Le tableau d'éléments initiaux ne peut pas être vide.");
         }
     }
 
@@ -49,7 +55,8 @@ public class GrilleImpl implements Grille {
     @Override
     public Set<ElementDeGrille> getElements() {
 
-        throw new UnsupportedOperationException("Unimplemented method 'getElements'");
+        throw new UnsupportedOperationException(
+                "Unimplemented method 'getElements'");
     }
 
     /**
@@ -60,7 +67,8 @@ public class GrilleImpl implements Grille {
     @Override
     public int getDimension() {
 
-        throw new UnsupportedOperationException("Unimplemented method 'getDimension'");
+        throw new UnsupportedOperationException(
+                "Unimplemented method 'getDimension'");
     }
 
     /**
@@ -69,18 +77,22 @@ public class GrilleImpl implements Grille {
      * @param x     Coordonnée x de l'élément.
      * @param y     Coordonnée y de l'élément.
      * @param value La nouvelle valeur de l'élément.
-     * @throws HorsBornesException                 Si les coordonnées sont en dehors
-     *                                             des
-     *                                             limites de la grille.
-     * @throws ValeurImpossibleException           Si la valeur est déjà présente
-     *                                             dans la
-     *                                             même ligne, colonne ou carré.
+     * @throws HorsBornesException                 Si les coordonnées
+     *                                             sont en dehors
+     *                                             des limites
+     *                                             de la grille.
+     * @throws ValeurImpossibleException           Si la valeur est déjà
+     *                                             présente
+     *                                             dans la même ligne,
+     *                                             colonne ou
+     *                                             carré.
      * @throws ElementInterditException            Si l'élément est interdit.
      * @throws ValeurInitialeModificationException Si on tente de modifier une
      *                                             valeur initiale.
      */
     @Override
-    public void setValue(int x, int y, ElementDeGrille value) throws HorsBornesException, ValeurImpossibleException,
+    public void setValue(final int x, final int y, final ElementDeGrille value)
+            throws HorsBornesException, ValeurImpossibleException,
             ElementInterditException, ValeurInitialeModificationException {
 
     }
@@ -95,9 +107,10 @@ public class GrilleImpl implements Grille {
      * @return La valeur de l'élément aux coordonnées spécifiées.
      */
     @Override
-    public ElementDeGrille getValue(int x, int y) throws HorsBornesException {
-
-        throw new UnsupportedOperationException("Unimplemented method 'getValue'");
+    public ElementDeGrille getValue(final int x,
+            final int y) throws HorsBornesException {
+        throw new UnsupportedOperationException(
+                "Unimplemented method 'getValue'");
     }
 
     /**
@@ -109,7 +122,8 @@ public class GrilleImpl implements Grille {
     @Override
     public boolean isComplete() {
 
-        throw new UnsupportedOperationException("Unimplemented method 'isComplete'");
+        throw new UnsupportedOperationException(
+                "Unimplemented method 'isComplete'");
     }
 
     /**
@@ -124,10 +138,12 @@ public class GrilleImpl implements Grille {
      * @return True si l'ajout de la valeur est possible, sinon False.
      */
     @Override
-    public boolean isPossible(int x, int y, ElementDeGrille value)
+    public boolean isPossible(final int x,
+            final int y, final ElementDeGrille value)
             throws HorsBornesException, ElementInterditException {
 
-        throw new UnsupportedOperationException("Unimplemented method 'isPossible'");
+        throw new UnsupportedOperationException(
+                "Unimplemented method 'isPossible'");
     }
 
     /**
@@ -139,12 +155,18 @@ public class GrilleImpl implements Grille {
      *         initiale, sinon False.
      */
     @Override
-    public boolean isValeurInitiale(int x, int y) {
+    public boolean isValeurInitiale(final int x, final int y) {
 
-        throw new UnsupportedOperationException("Unimplemented method 'isValeurInitiale'");
+        throw new UnsupportedOperationException(
+                "Unimplemented method 'isValeurInitiale'");
     }
 
-    public void setElements(ElementDeGrille[] elements) {
+    /**
+     * initialise la grille.
+     *
+     * @param elements la grille d'éléments.
+     */
+    public void setElements(final ElementDeGrille[] elements) {
         this.elementDeGrilles = elements;
     }
 

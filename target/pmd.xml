@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd" version="6.53.0" timestamp="2023-06-29T13:15:29.774">
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd" version="6.53.0" timestamp="2023-06-29T16:46:30.009">
 <file name="C:\Users\Steven\OneDrive\Documents\Cours_université\Master_MIAGE\Semestre_2\Ingénérie_du_logiciel\Activité_2\sudo\src\main\java\sudoku\ElementDeGrilleImplAsChar.java">
-<violation beginline="4" endline="4" begincolumn="18" endcolumn="24" rule="UnusedPrivateField" ruleset="Best Practices" package="sudoku" class="ElementDeGrilleImplAsChar" variable="element" externalInfoUrl="https://pmd.github.io/pmd-6.53.0/pmd_rules_java_bestpractices.html#unusedprivatefield" priority="3">
+<violation beginline="17" endline="17" begincolumn="24" endcolumn="30" rule="UnusedPrivateField" ruleset="Best Practices" package="sudoku" class="ElementDeGrilleImplAsChar" variable="element" externalInfoUrl="https://pmd.github.io/pmd-6.53.0/pmd_rules_java_bestpractices.html#unusedprivatefield" priority="3">
 Avoid unused private fields such as 'element'.
 </violation>
 </file>
@@ -9,19 +9,14 @@ Avoid unused private fields such as 'element'.
 <violation beginline="17" endline="17" begincolumn="17" endcolumn="25" rule="UnusedPrivateField" ruleset="Best Practices" package="sudoku" class="GrilleImpl" variable="dimension" externalInfoUrl="https://pmd.github.io/pmd-6.53.0/pmd_rules_java_bestpractices.html#unusedprivatefield" priority="3">
 Avoid unused private fields such as 'dimension'.
 </violation>
-<violation beginline="21" endline="21" begincolumn="33" endcolumn="38" rule="UnusedPrivateField" ruleset="Best Practices" package="sudoku" class="GrilleImpl" variable="grille" externalInfoUrl="https://pmd.github.io/pmd-6.53.0/pmd_rules_java_bestpractices.html#unusedprivatefield" priority="3">
+<violation beginline="22" endline="22" begincolumn="33" endcolumn="38" rule="UnusedPrivateField" ruleset="Best Practices" package="sudoku" class="GrilleImpl" variable="grille" externalInfoUrl="https://pmd.github.io/pmd-6.53.0/pmd_rules_java_bestpractices.html#unusedprivatefield" priority="3">
 Avoid unused private fields such as 'grille'.
 </violation>
-<violation beginline="25" endline="25" begincolumn="34" endcolumn="41" rule="UnusedPrivateField" ruleset="Best Practices" package="sudoku" class="GrilleImpl" variable="elements" externalInfoUrl="https://pmd.github.io/pmd-6.53.0/pmd_rules_java_bestpractices.html#unusedprivatefield" priority="3">
+<violation beginline="27" endline="27" begincolumn="34" endcolumn="41" rule="UnusedPrivateField" ruleset="Best Practices" package="sudoku" class="GrilleImpl" variable="elements" externalInfoUrl="https://pmd.github.io/pmd-6.53.0/pmd_rules_java_bestpractices.html#unusedprivatefield" priority="3">
 Avoid unused private fields such as 'elements'.
 </violation>
-<violation beginline="27" endline="27" begincolumn="31" endcolumn="46" rule="UnusedPrivateField" ruleset="Best Practices" package="sudoku" class="GrilleImpl" variable="elementDeGrilles" externalInfoUrl="https://pmd.github.io/pmd-6.53.0/pmd_rules_java_bestpractices.html#unusedprivatefield" priority="3">
+<violation beginline="32" endline="32" begincolumn="31" endcolumn="46" rule="UnusedPrivateField" ruleset="Best Practices" package="sudoku" class="GrilleImpl" variable="elementDeGrilles" externalInfoUrl="https://pmd.github.io/pmd-6.53.0/pmd_rules_java_bestpractices.html#unusedprivatefield" priority="3">
 Avoid unused private fields such as 'elementDeGrilles'.
-</violation>
-</file>
-<file name="C:\Users\Steven\OneDrive\Documents\Cours_université\Master_MIAGE\Semestre_2\Ingénérie_du_logiciel\Activité_2\sudo\src\main\java\sudoku\GrilleParser.java">
-<violation beginline="11" endline="11" begincolumn="1" endcolumn="27" rule="UnnecessaryImport" ruleset="Code Style" package="sudoku" class="GrilleParser" externalInfoUrl="https://pmd.github.io/pmd-6.53.0/pmd_rules_java_codestyle.html#unnecessaryimport" priority="4">
-Unnecessary import from the java.lang package 'java.lang.Character'
 </violation>
 </file>
 </pmd>

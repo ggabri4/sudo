@@ -1,6 +1,10 @@
 package sudoku;
 
-import interfaces.*;
+import interfaces.HorsBornesException;
+import interfaces.ValeurImpossibleException;
+import interfaces.ValeurInitialeModificationException;
+import interfaces.ElementInterditException;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
@@ -8,7 +12,6 @@ import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
 import java.util.Map;
-import java.lang.Character;
 
 /**
  * Méthodes utilitaire permettant de créer une Grille à partir d'un fichier
@@ -26,7 +29,7 @@ import java.lang.Character;
  *
  * @author Sébastien Choplin <sebastien.choplin@u-picardie.fr>
  */
-public class GrilleParser {
+public final class GrilleParser {
     // private static final char EMPTY = '-';
 
     /**
@@ -39,11 +42,23 @@ public class GrilleParser {
      * Fonction parse.
      *
      * @param in recu
-     * @throws IOException               format de grille en caractere incorrect
-     * @throws ValeurImpossibleException si la grille ne respècte pas les règles
+     * @throws IOException                         format de grille
+     *                                             en caractere
+     *                                             incorrect
+     * @throws ValeurImpossibleException           si la grille ne
+     *                                             respècte pas les
+     *                                             règles
+     * @throws ElementInterditException            si impossible de placer
+     *                                             l'élement
+     * @throws ValeurInitialeModificationException reprend la valeur
+     *                                             intitiale en
+     *                                             cas d'erreur
+     * @throws HorsBornesException                 si hors borne
+     * @return grille un element de la grille
      */
     public static Grille parse(final InputStream in)
-            throws IOException, ElementInterditException, ValeurInitialeModificationException, HorsBornesException,
+            throws IOException, ElementInterditException,
+            ValeurInitialeModificationException, HorsBornesException,
             ValeurImpossibleException {
         try (BufferedReader reader = new BufferedReader(new InputStreamReader(in, StandardCharsets.UTF_8))) {
 
@@ -60,14 +75,16 @@ public class GrilleParser {
                     continue;
                 }
                 if (elementDeGrilleMap.containsKey(value)) {
-                    throw new IllegalArgumentException("valeur possible dupliquée : " + value);
+                    throw new IllegalArgumentException(
+                            "valeur possible dupliquée : " + value);
                 }
                 elementDeGrilleMap.put(value, new ElementDeGrilleImplAsChar(value));
 
             }
 
             if (elementDeGrilleMap.size() != dimension) {
-                throw new IllegalArgumentException("pas le bon nombre de valeurs possibles");
+                throw new IllegalArgumentException(
+                        "pas le bon nombre de valeurs possibles");
             }
             ElementDeGrille[] elementDeGrilles = elementDeGrilleMap.values().toArray(new ElementDeGrille[] {});
             Grille grille = new GrilleImpl(elementDeGrilles);
@@ -75,7 +92,8 @@ public class GrilleParser {
             for (int i = 0; i < dimension; i++) {
                 line = reader.readLine();
                 if (line == null || line.length() != dimension) {
-                    throw new IOException("pas le bon nombre sur la ligne : " + line);
+                    throw new IOException(
+                            "pas le bon nombre sur la ligne : " + line);
                 }
                 for (int j = 0; j < dimension; j++) {
                     char c = line.charAt(j);
