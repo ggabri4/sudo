@@ -138,13 +138,42 @@ public class GrilleImpl implements Grille {
      * @return True si l'ajout de la valeur est possible, sinon False.
      */
     @Override
-    public final boolean isPossible(final int x,
-            final int y, final ElementDeGrille value)
+    public final boolean isPossible(final int x, final int y, final ElementDeGrille value)
             throws HorsBornesException, ElementInterditException {
 
-        throw new UnsupportedOperationException(
-                "Unimplemented method 'isPossible'");
+        if (x < 0 || y < 0 || x >= dimension || y >= dimension) {
+            throw new HorsBornesException("Position en dehors de la grille");
+        }
+
+        // Vérifier si la valeur existe déjà dans la même ligne
+        for (int i = 0; i < dimension; i++) {
+            if (grille[x][i] != null && grille[x][i].equals(value)) {
+                return false;
+            }
+        }
+
+        // Vérifier si la valeur existe déjà dans la même colonne
+        for (int i = 0; i < dimension; i++) {
+            if (grille[i][y] != null && grille[i][y].equals(value)) {
+                return false;
+            }
+        }
+
+        // Vérifier si la valeur existe déjà dans le même carré
+        int squareSize = (int) Math.sqrt(dimension);
+        int startX = (x / squareSize) * squareSize;
+        int startY = (y / squareSize) * squareSize;
+
+        for (int i = startX; i < startX + squareSize; i++) {
+            for (int j = startY; j < startY + squareSize; j++) {
+                if (grille[i][j] != null && grille[i][j].equals(value)) {
+                    return false;
+                }
+            }
+        }
+        return true;
     }
+
 
     /**
      * Vérifie si la valeur à une position spécifique est une valeur initiale.

@@ -1,4 +1,5 @@
 interfaces\ValeurImpossibleException.class
+sudoku\SolveurImpl.class
 sudoku\GrilleParser.class
 interfaces\ElementInterditException.class
 interfaces\ValeurInitialeModificationException.class

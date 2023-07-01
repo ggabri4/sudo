@@ -148,39 +148,68 @@
 <a class="jxr_linenumber" name="138" href="#138">138</a> <em class="jxr_javadoccomment">     * @return True si l'ajout de la valeur est possible, sinon False.</em>
 <a class="jxr_linenumber" name="139" href="#139">139</a> <em class="jxr_javadoccomment">     */</em>
 <a class="jxr_linenumber" name="140" href="#140">140</a>     @Override
-<a class="jxr_linenumber" name="141" href="#141">141</a>     <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">final</strong> <strong class="jxr_keyword">boolean</strong> isPossible(<strong class="jxr_keyword">final</strong> <strong class="jxr_keyword">int</strong> x,
-<a class="jxr_linenumber" name="142" href="#142">142</a>             <strong class="jxr_keyword">final</strong> <strong class="jxr_keyword">int</strong> y, <strong class="jxr_keyword">final</strong> <a href="../sudoku/ElementDeGrille.html">ElementDeGrille</a> value)
-<a class="jxr_linenumber" name="143" href="#143">143</a>             <strong class="jxr_keyword">throws</strong> HorsBornesException, <a href="../interfaces/ElementInterditException.html">ElementInterditException</a> {
-<a class="jxr_linenumber" name="144" href="#144">144</a> 
-<a class="jxr_linenumber" name="145" href="#145">145</a>         <strong class="jxr_keyword">throw</strong> <strong class="jxr_keyword">new</strong> UnsupportedOperationException(
-<a class="jxr_linenumber" name="146" href="#146">146</a>                 <span class="jxr_string">"Unimplemented method 'isPossible'"</span>);
-<a class="jxr_linenumber" name="147" href="#147">147</a>     }
-<a class="jxr_linenumber" name="148" href="#148">148</a> 
-<a class="jxr_linenumber" name="149" href="#149">149</a>     <em class="jxr_javadoccomment">/**</em>
-<a class="jxr_linenumber" name="150" href="#150">150</a> <em class="jxr_javadoccomment">     * Vérifie si la valeur à une position spécifique est une valeur initiale.</em>
-<a class="jxr_linenumber" name="151" href="#151">151</a> <em class="jxr_javadoccomment">     *</em>
-<a class="jxr_linenumber" name="152" href="#152">152</a> <em class="jxr_javadoccomment">     * @param x Coordonnée x de l'élément.</em>
-<a class="jxr_linenumber" name="153" href="#153">153</a> <em class="jxr_javadoccomment">     * @param y Coordonnée y de l'élément.</em>
-<a class="jxr_linenumber" name="154" href="#154">154</a> <em class="jxr_javadoccomment">     * @return True si la valeur à la position spécifiée est une valeur</em>
-<a class="jxr_linenumber" name="155" href="#155">155</a> <em class="jxr_javadoccomment">     *         initiale, sinon False.</em>
-<a class="jxr_linenumber" name="156" href="#156">156</a> <em class="jxr_javadoccomment">     */</em>
-<a class="jxr_linenumber" name="157" href="#157">157</a>     @Override
-<a class="jxr_linenumber" name="158" href="#158">158</a>     <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">final</strong> <strong class="jxr_keyword">boolean</strong> isValeurInitiale(<strong class="jxr_keyword">final</strong> <strong class="jxr_keyword">int</strong> x, <strong class="jxr_keyword">final</strong> <strong class="jxr_keyword">int</strong> y) {
-<a class="jxr_linenumber" name="159" href="#159">159</a> 
-<a class="jxr_linenumber" name="160" href="#160">160</a>         <strong class="jxr_keyword">throw</strong> <strong class="jxr_keyword">new</strong> UnsupportedOperationException(
-<a class="jxr_linenumber" name="161" href="#161">161</a>                 <span class="jxr_string">"Unimplemented method 'isValeurInitiale'"</span>);
-<a class="jxr_linenumber" name="162" href="#162">162</a>     }
-<a class="jxr_linenumber" name="163" href="#163">163</a> 
-<a class="jxr_linenumber" name="164" href="#164">164</a>     <em class="jxr_javadoccomment">/**</em>
-<a class="jxr_linenumber" name="165" href="#165">165</a> <em class="jxr_javadoccomment">     * initialise la grille.</em>
-<a class="jxr_linenumber" name="166" href="#166">166</a> <em class="jxr_javadoccomment">     *</em>
-<a class="jxr_linenumber" name="167" href="#167">167</a> <em class="jxr_javadoccomment">     * @param inputElements la grille d'éléments.</em>
-<a class="jxr_linenumber" name="168" href="#168">168</a> <em class="jxr_javadoccomment">     */</em>
-<a class="jxr_linenumber" name="169" href="#169">169</a>     <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">final</strong> <strong class="jxr_keyword">void</strong> setElements(<strong class="jxr_keyword">final</strong> <a href="../sudoku/ElementDeGrille.html">ElementDeGrille</a>[] inputElements) {
-<a class="jxr_linenumber" name="170" href="#170">170</a>         <strong class="jxr_keyword">this</strong>.elementDeGrilles = inputElements;
-<a class="jxr_linenumber" name="171" href="#171">171</a>     }
-<a class="jxr_linenumber" name="172" href="#172">172</a> 
-<a class="jxr_linenumber" name="173" href="#173">173</a> }
+<a class="jxr_linenumber" name="141" href="#141">141</a>     <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">final</strong> <strong class="jxr_keyword">boolean</strong> isPossible(<strong class="jxr_keyword">final</strong> <strong class="jxr_keyword">int</strong> x, <strong class="jxr_keyword">final</strong> <strong class="jxr_keyword">int</strong> y, <strong class="jxr_keyword">final</strong> <a href="../sudoku/ElementDeGrille.html">ElementDeGrille</a> value)
+<a class="jxr_linenumber" name="142" href="#142">142</a>             <strong class="jxr_keyword">throws</strong> HorsBornesException, <a href="../interfaces/ElementInterditException.html">ElementInterditException</a> {
+<a class="jxr_linenumber" name="143" href="#143">143</a> 
+<a class="jxr_linenumber" name="144" href="#144">144</a>         <strong class="jxr_keyword">if</strong> (x &lt; 0 || y &lt; 0 || x &gt;= dimension || y &gt;= dimension) {
+<a class="jxr_linenumber" name="145" href="#145">145</a>             <strong class="jxr_keyword">throw</strong> <strong class="jxr_keyword">new</strong> <a href="../interfaces/HorsBornesException.html">HorsBornesException</a>(<span class="jxr_string">"Position en dehors de la grille"</span>);
+<a class="jxr_linenumber" name="146" href="#146">146</a>         }
+<a class="jxr_linenumber" name="147" href="#147">147</a> 
+<a class="jxr_linenumber" name="148" href="#148">148</a>         <em class="jxr_comment">// Vérifier si la valeur existe déjà dans la même ligne</em>
+<a class="jxr_linenumber" name="149" href="#149">149</a>         <strong class="jxr_keyword">for</strong> (<strong class="jxr_keyword">int</strong> i = 0; i &lt; dimension; i++) {
+<a class="jxr_linenumber" name="150" href="#150">150</a>             <strong class="jxr_keyword">if</strong> (grille[x][i] != <strong class="jxr_keyword">null</strong> &amp;&amp; grille[x][i].equals(value)) {
+<a class="jxr_linenumber" name="151" href="#151">151</a>                 <strong class="jxr_keyword">return</strong> false;
+<a class="jxr_linenumber" name="152" href="#152">152</a>             }
+<a class="jxr_linenumber" name="153" href="#153">153</a>         }
+<a class="jxr_linenumber" name="154" href="#154">154</a> 
+<a class="jxr_linenumber" name="155" href="#155">155</a>         <em class="jxr_comment">// Vérifier si la valeur existe déjà dans la même colonne</em>
+<a class="jxr_linenumber" name="156" href="#156">156</a>         <strong class="jxr_keyword">for</strong> (<strong class="jxr_keyword">int</strong> i = 0; i &lt; dimension; i++) {
+<a class="jxr_linenumber" name="157" href="#157">157</a>             <strong class="jxr_keyword">if</strong> (grille[i][y] != <strong class="jxr_keyword">null</strong> &amp;&amp; grille[i][y].equals(value)) {
+<a class="jxr_linenumber" name="158" href="#158">158</a>                 <strong class="jxr_keyword">return</strong> false;
+<a class="jxr_linenumber" name="159" href="#159">159</a>             }
+<a class="jxr_linenumber" name="160" href="#160">160</a>         }
+<a class="jxr_linenumber" name="161" href="#161">161</a> 
+<a class="jxr_linenumber" name="162" href="#162">162</a>         <em class="jxr_comment">// Vérifier si la valeur existe déjà dans le même carré</em>
+<a class="jxr_linenumber" name="163" href="#163">163</a>         <strong class="jxr_keyword">int</strong> squareSize = (<strong class="jxr_keyword">int</strong>) Math.sqrt(dimension);
+<a class="jxr_linenumber" name="164" href="#164">164</a>         <strong class="jxr_keyword">int</strong> startX = (x / squareSize) * squareSize;
+<a class="jxr_linenumber" name="165" href="#165">165</a>         <strong class="jxr_keyword">int</strong> startY = (y / squareSize) * squareSize;
+<a class="jxr_linenumber" name="166" href="#166">166</a> 
+<a class="jxr_linenumber" name="167" href="#167">167</a>         <strong class="jxr_keyword">for</strong> (<strong class="jxr_keyword">int</strong> i = startX; i &lt; startX + squareSize; i++) {
+<a class="jxr_linenumber" name="168" href="#168">168</a>             <strong class="jxr_keyword">for</strong> (<strong class="jxr_keyword">int</strong> j = startY; j &lt; startY + squareSize; j++) {
+<a class="jxr_linenumber" name="169" href="#169">169</a>                 <strong class="jxr_keyword">if</strong> (grille[i][j] != <strong class="jxr_keyword">null</strong> &amp;&amp; grille[i][j].equals(value)) {
+<a class="jxr_linenumber" name="170" href="#170">170</a>                     <strong class="jxr_keyword">return</strong> false;
+<a class="jxr_linenumber" name="171" href="#171">171</a>                 }
+<a class="jxr_linenumber" name="172" href="#172">172</a>             }
+<a class="jxr_linenumber" name="173" href="#173">173</a>         }
+<a class="jxr_linenumber" name="174" href="#174">174</a>         <strong class="jxr_keyword">return</strong> <strong class="jxr_keyword">true</strong>;
+<a class="jxr_linenumber" name="175" href="#175">175</a>     }
+<a class="jxr_linenumber" name="176" href="#176">176</a> 
+<a class="jxr_linenumber" name="177" href="#177">177</a> 
+<a class="jxr_linenumber" name="178" href="#178">178</a>     <em class="jxr_javadoccomment">/**</em>
+<a class="jxr_linenumber" name="179" href="#179">179</a> <em class="jxr_javadoccomment">     * Vérifie si la valeur à une position spécifique est une valeur initiale.</em>
+<a class="jxr_linenumber" name="180" href="#180">180</a> <em class="jxr_javadoccomment">     *</em>
+<a class="jxr_linenumber" name="181" href="#181">181</a> <em class="jxr_javadoccomment">     * @param x Coordonnée x de l'élément.</em>
+<a class="jxr_linenumber" name="182" href="#182">182</a> <em class="jxr_javadoccomment">     * @param y Coordonnée y de l'élément.</em>
+<a class="jxr_linenumber" name="183" href="#183">183</a> <em class="jxr_javadoccomment">     * @return True si la valeur à la position spécifiée est une valeur</em>
+<a class="jxr_linenumber" name="184" href="#184">184</a> <em class="jxr_javadoccomment">     *         initiale, sinon False.</em>
+<a class="jxr_linenumber" name="185" href="#185">185</a> <em class="jxr_javadoccomment">     */</em>
+<a class="jxr_linenumber" name="186" href="#186">186</a>     @Override
+<a class="jxr_linenumber" name="187" href="#187">187</a>     <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">final</strong> <strong class="jxr_keyword">boolean</strong> isValeurInitiale(<strong class="jxr_keyword">final</strong> <strong class="jxr_keyword">int</strong> x, <strong class="jxr_keyword">final</strong> <strong class="jxr_keyword">int</strong> y) {
+<a class="jxr_linenumber" name="188" href="#188">188</a> 
+<a class="jxr_linenumber" name="189" href="#189">189</a>         <strong class="jxr_keyword">throw</strong> <strong class="jxr_keyword">new</strong> UnsupportedOperationException(
+<a class="jxr_linenumber" name="190" href="#190">190</a>                 <span class="jxr_string">"Unimplemented method 'isValeurInitiale'"</span>);
+<a class="jxr_linenumber" name="191" href="#191">191</a>     }
+<a class="jxr_linenumber" name="192" href="#192">192</a> 
+<a class="jxr_linenumber" name="193" href="#193">193</a>     <em class="jxr_javadoccomment">/**</em>
+<a class="jxr_linenumber" name="194" href="#194">194</a> <em class="jxr_javadoccomment">     * initialise la grille.</em>
+<a class="jxr_linenumber" name="195" href="#195">195</a> <em class="jxr_javadoccomment">     *</em>
+<a class="jxr_linenumber" name="196" href="#196">196</a> <em class="jxr_javadoccomment">     * @param inputElements la grille d'éléments.</em>
+<a class="jxr_linenumber" name="197" href="#197">197</a> <em class="jxr_javadoccomment">     */</em>
+<a class="jxr_linenumber" name="198" href="#198">198</a>     <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">final</strong> <strong class="jxr_keyword">void</strong> setElements(<strong class="jxr_keyword">final</strong> <a href="../sudoku/ElementDeGrille.html">ElementDeGrille</a>[] inputElements) {
+<a class="jxr_linenumber" name="199" href="#199">199</a>         <strong class="jxr_keyword">this</strong>.elementDeGrilles = inputElements;
+<a class="jxr_linenumber" name="200" href="#200">200</a>     }
+<a class="jxr_linenumber" name="201" href="#201">201</a> 
+<a class="jxr_linenumber" name="202" href="#202">202</a> }
 </pre>
 <hr/><div id="footer">This page was automatically generated by <a href="http://maven.apache.org/">Maven</a></div></body>
 </html>
