@@ -1,11 +1,12 @@
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import sudoku.ElementDeGrille;
-import sudoku.Grille;
-import sudoku.GrilleImpl;
+
 import sudoku.*;
 
 import static org.junit.jupiter.api.Assertions.*;
+
+import java.io.IOException;
+import java.nio.file.Path;
 
 /**
  * Unit test for simple App.
@@ -121,5 +122,10 @@ public class AppTest {
         } catch (Exception e) {
             // Gérez les exceptions, le cas échéant
         }
+    }
+
+    @Test
+    public void testMain() throws IOException {
+        Main.main(new String[] {});
     }
 }

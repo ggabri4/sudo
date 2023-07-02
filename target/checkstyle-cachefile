@@ -1,17 +1,16 @@
-#Sun Jul 02 20:36:19 CEST 2023
-configuration*?=BB7701F4FF45DE3B52F2771374CD4D5D8323B81B
-C\:\\Users\\Steven\\OneDrive\\Documents\\Cours_universit\u00E9\\Master_MIAGE\\Semestre_2\\Ing\u00E9n\u00E9rie_du_logiciel\\Activit\u00E9_2\\sudo\\src\\main\\java\\interfaces\\package-info.java=1688036840302
-C\:\\Users\\Steven\\OneDrive\\Documents\\Cours_universit\u00E9\\Master_MIAGE\\Semestre_2\\Ing\u00E9n\u00E9rie_du_logiciel\\Activit\u00E9_2\\sudo\\src\\main\\java\\sudoku\\GrilleImpl.java=1688319994345
-C\:\\Users\\Steven\\OneDrive\\Documents\\Cours_universit\u00E9\\Master_MIAGE\\Semestre_2\\Ing\u00E9n\u00E9rie_du_logiciel\\Activit\u00E9_2\\sudo\\src\\main\\java\\sudoku\\Solveur.java=1688314435288
-C\:\\Users\\Steven\\OneDrive\\Documents\\Cours_universit\u00E9\\Master_MIAGE\\Semestre_2\\Ing\u00E9n\u00E9rie_du_logiciel\\Activit\u00E9_2\\sudo\\src\\main\\java\\sudoku\\Main.java=1688322946096
-C\:\\Users\\Steven\\OneDrive\\Documents\\Cours_universit\u00E9\\Master_MIAGE\\Semestre_2\\Ing\u00E9n\u00E9rie_du_logiciel\\Activit\u00E9_2\\sudo\\src\\main\\java\\sudoku\\package-info.java=1688036840303
-C\:\\Users\\Steven\\OneDrive\\Documents\\Cours_universit\u00E9\\Master_MIAGE\\Semestre_2\\Ing\u00E9n\u00E9rie_du_logiciel\\Activit\u00E9_2\\sudo\\src\\main\\java\\interfaces\\ValeurInitialeModificationException.java=1688036840302
-C\:\\Users\\Steven\\OneDrive\\Documents\\Cours_universit\u00E9\\Master_MIAGE\\Semestre_2\\Ing\u00E9n\u00E9rie_du_logiciel\\Activit\u00E9_2\\sudo\\src\\main\\java\\sudoku\\ElementDeGrille.java=1688037264497
-C\:\\Users\\Steven\\OneDrive\\Documents\\Cours_universit\u00E9\\Master_MIAGE\\Semestre_2\\Ing\u00E9n\u00E9rie_du_logiciel\\Activit\u00E9_2\\sudo\\src\\main\\java\\sudoku\\Grille.java=1688036840303
-C\:\\Users\\Steven\\OneDrive\\Documents\\Cours_universit\u00E9\\Master_MIAGE\\Semestre_2\\Ing\u00E9n\u00E9rie_du_logiciel\\Activit\u00E9_2\\sudo\\src\\main\\java\\sudoku\\ElementDeGrilleImplAsChar.java=1688049944286
-C\:\\Users\\Steven\\OneDrive\\Documents\\Cours_universit\u00E9\\Master_MIAGE\\Semestre_2\\Ing\u00E9n\u00E9rie_du_logiciel\\Activit\u00E9_2\\sudo\\src\\main\\java\\sudoku\\SolveurImpl.java=1688322484894
-C\:\\Users\\Steven\\OneDrive\\Documents\\Cours_universit\u00E9\\Master_MIAGE\\Semestre_2\\Ing\u00E9n\u00E9rie_du_logiciel\\Activit\u00E9_2\\sudo\\src\\main\\java\\interfaces\\ValeurImpossibleException.java=1688036840301
-C\:\\Users\\Steven\\OneDrive\\Documents\\Cours_universit\u00E9\\Master_MIAGE\\Semestre_2\\Ing\u00E9n\u00E9rie_du_logiciel\\Activit\u00E9_2\\sudo\\src\\main\\java\\interfaces\\HorsBornesException.java=1688036840301
-C\:\\Users\\Steven\\OneDrive\\Documents\\Cours_universit\u00E9\\Master_MIAGE\\Semestre_2\\Ing\u00E9n\u00E9rie_du_logiciel\\Activit\u00E9_2\\sudo\\src\\main\\java\\interfaces\\CaractereInterditException.java=1688036840300
-C\:\\Users\\Steven\\OneDrive\\Documents\\Cours_universit\u00E9\\Master_MIAGE\\Semestre_2\\Ing\u00E9n\u00E9rie_du_logiciel\\Activit\u00E9_2\\sudo\\src\\main\\java\\sudoku\\GrilleParser.java=1688051591379
-C\:\\Users\\Steven\\OneDrive\\Documents\\Cours_universit\u00E9\\Master_MIAGE\\Semestre_2\\Ing\u00E9n\u00E9rie_du_logiciel\\Activit\u00E9_2\\sudo\\src\\main\\java\\interfaces\\ElementInterditException.java=1688036840300
+#Sun Jul 02 20:49:09 CEST 2023
+configuration*?=A642A4A931FDE1833D1ADD4B85A17B2C97A8D899
+E\:\\ggabri4\\Documents\\COURS_Master_1\\Ing\u00E9_logiciel\\sudo\\src\\main\\java\\interfaces\\ElementInterditException.java=1687791930464
+E\:\\ggabri4\\Documents\\COURS_Master_1\\Ing\u00E9_logiciel\\sudo\\src\\main\\java\\interfaces\\package-info.java=1687792715095
+E\:\\ggabri4\\Documents\\COURS_Master_1\\Ing\u00E9_logiciel\\sudo\\src\\main\\java\\sudoku\\ElementDeGrille.java=1688225471237
+E\:\\ggabri4\\Documents\\COURS_Master_1\\Ing\u00E9_logiciel\\sudo\\src\\main\\java\\sudoku\\GrilleParser.java=1688225471238
+E\:\\ggabri4\\Documents\\COURS_Master_1\\Ing\u00E9_logiciel\\sudo\\src\\main\\java\\interfaces\\CaractereInterditException.java=1687791234094
+E\:\\ggabri4\\Documents\\COURS_Master_1\\Ing\u00E9_logiciel\\sudo\\src\\main\\java\\sudoku\\SolveurImpl.java=1688323073418
+E\:\\ggabri4\\Documents\\COURS_Master_1\\Ing\u00E9_logiciel\\sudo\\src\\main\\java\\sudoku\\ElementDeGrilleImplAsChar.java=1688226893037
+E\:\\ggabri4\\Documents\\COURS_Master_1\\Ing\u00E9_logiciel\\sudo\\src\\main\\java\\sudoku\\Main.java=1688323073418
+E\:\\ggabri4\\Documents\\COURS_Master_1\\Ing\u00E9_logiciel\\sudo\\src\\main\\java\\interfaces\\ValeurInitialeModificationException.java=1687791250701
+E\:\\ggabri4\\Documents\\COURS_Master_1\\Ing\u00E9_logiciel\\sudo\\src\\main\\java\\interfaces\\HorsBornesException.java=1687791239128
+E\:\\ggabri4\\Documents\\COURS_Master_1\\Ing\u00E9_logiciel\\sudo\\src\\main\\java\\interfaces\\ValeurImpossibleException.java=1687792224061
+E\:\\ggabri4\\Documents\\COURS_Master_1\\Ing\u00E9_logiciel\\sudo\\src\\main\\java\\sudoku\\GrilleImpl.java=1688323073418
+E\:\\ggabri4\\Documents\\COURS_Master_1\\Ing\u00E9_logiciel\\sudo\\src\\main\\java\\sudoku\\package-info.java=1687792712054
+E\:\\ggabri4\\Documents\\COURS_Master_1\\Ing\u00E9_logiciel\\sudo\\src\\main\\java\\sudoku\\Solveur.java=1688316790072
