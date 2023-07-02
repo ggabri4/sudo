@@ -54,9 +54,7 @@ public class GrilleImpl implements Grille {
      */
     @Override
     public final Set<ElementDeGrille> getElements() {
-
-        throw new UnsupportedOperationException(
-                "Unimplemented method 'getElements'");
+        return elements;
     }
 
     /**
@@ -107,8 +105,7 @@ public class GrilleImpl implements Grille {
     @Override
     public final ElementDeGrille getValue(final int x,
             final int y) throws HorsBornesException {
-        throw new UnsupportedOperationException(
-                "Unimplemented method 'getValue'");
+        return grille[x][y];
     }
 
     /**
@@ -119,9 +116,14 @@ public class GrilleImpl implements Grille {
      */
     @Override
     public final boolean isComplete() {
-
-        throw new UnsupportedOperationException(
-                "Unimplemented method 'isComplete'");
+        for (int x = 0; x < this.dimension; x++) {
+            for (int y = 0; y < this.dimension; y++) {
+                if (this.grille[x][y] == null) {
+                    return false;
+                }
+            }
+        }
+        return true;
     }
 
     /**
@@ -183,9 +185,7 @@ public class GrilleImpl implements Grille {
      */
     @Override
     public final boolean isValeurInitiale(final int x, final int y) {
-
-        throw new UnsupportedOperationException(
-                "Unimplemented method 'isValeurInitiale'");
+        return this.grille[x][y] != null;
     }
 
     /**
