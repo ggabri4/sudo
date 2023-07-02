@@ -125,7 +125,7 @@ public class AppTest {
     }
 
     @Test
-    public void testMain() throws IOException {
+    public void testMain() {
         Main.main(new String[] {});
     }
 }
