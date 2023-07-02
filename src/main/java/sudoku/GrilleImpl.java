@@ -66,9 +66,7 @@ public class GrilleImpl implements Grille {
      */
     @Override
     public final int getDimension() {
-
-        throw new UnsupportedOperationException(
-                "Unimplemented method 'getDimension'");
+        return dimension;
     }
 
     /**
