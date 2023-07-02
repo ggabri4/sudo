@@ -136,7 +136,8 @@ public class GrilleImpl implements Grille {
      * @return True si l'ajout de la valeur est possible, sinon False.
      */
     @Override
-    public final boolean isPossible(final int x, final int y, final ElementDeGrille value)
+    public final boolean isPossible(final int x,
+            final int y, final ElementDeGrille value)
             throws HorsBornesException, ElementInterditException {
 
         if (x < 0 || y < 0 || x >= dimension || y >= dimension) {
@@ -171,7 +172,6 @@ public class GrilleImpl implements Grille {
         }
         return true;
     }
-
 
     /**
      * Vérifie si la valeur à une position spécifique est une valeur initiale.

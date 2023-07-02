@@ -146,42 +146,42 @@
 <a class="jxr_linenumber" name="136" href="#136">136</a> <em class="jxr_javadoccomment">     * @return True si l'ajout de la valeur est possible, sinon False.</em>
 <a class="jxr_linenumber" name="137" href="#137">137</a> <em class="jxr_javadoccomment">     */</em>
 <a class="jxr_linenumber" name="138" href="#138">138</a>     @Override
-<a class="jxr_linenumber" name="139" href="#139">139</a>     <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">final</strong> <strong class="jxr_keyword">boolean</strong> isPossible(<strong class="jxr_keyword">final</strong> <strong class="jxr_keyword">int</strong> x, <strong class="jxr_keyword">final</strong> <strong class="jxr_keyword">int</strong> y, <strong class="jxr_keyword">final</strong> <a href="../sudoku/ElementDeGrille.html">ElementDeGrille</a> value)
-<a class="jxr_linenumber" name="140" href="#140">140</a>             <strong class="jxr_keyword">throws</strong> HorsBornesException, <a href="../interfaces/ElementInterditException.html">ElementInterditException</a> {
-<a class="jxr_linenumber" name="141" href="#141">141</a> 
-<a class="jxr_linenumber" name="142" href="#142">142</a>         <strong class="jxr_keyword">if</strong> (x &lt; 0 || y &lt; 0 || x &gt;= dimension || y &gt;= dimension) {
-<a class="jxr_linenumber" name="143" href="#143">143</a>             <strong class="jxr_keyword">throw</strong> <strong class="jxr_keyword">new</strong> <a href="../interfaces/HorsBornesException.html">HorsBornesException</a>(<span class="jxr_string">"Position en dehors de la grille"</span>);
-<a class="jxr_linenumber" name="144" href="#144">144</a>         }
-<a class="jxr_linenumber" name="145" href="#145">145</a> 
-<a class="jxr_linenumber" name="146" href="#146">146</a>         <em class="jxr_comment">// Vérifier si la valeur existe déjà dans la même ligne</em>
-<a class="jxr_linenumber" name="147" href="#147">147</a>         <strong class="jxr_keyword">for</strong> (<strong class="jxr_keyword">int</strong> i = 0; i &lt; dimension; i++) {
-<a class="jxr_linenumber" name="148" href="#148">148</a>             <strong class="jxr_keyword">if</strong> (grille[x][i] != <strong class="jxr_keyword">null</strong> &amp;&amp; grille[x][i].equals(value)) {
-<a class="jxr_linenumber" name="149" href="#149">149</a>                 <strong class="jxr_keyword">return</strong> false;
-<a class="jxr_linenumber" name="150" href="#150">150</a>             }
-<a class="jxr_linenumber" name="151" href="#151">151</a>         }
-<a class="jxr_linenumber" name="152" href="#152">152</a> 
-<a class="jxr_linenumber" name="153" href="#153">153</a>         <em class="jxr_comment">// Vérifier si la valeur existe déjà dans la même colonne</em>
-<a class="jxr_linenumber" name="154" href="#154">154</a>         <strong class="jxr_keyword">for</strong> (<strong class="jxr_keyword">int</strong> i = 0; i &lt; dimension; i++) {
-<a class="jxr_linenumber" name="155" href="#155">155</a>             <strong class="jxr_keyword">if</strong> (grille[i][y] != <strong class="jxr_keyword">null</strong> &amp;&amp; grille[i][y].equals(value)) {
-<a class="jxr_linenumber" name="156" href="#156">156</a>                 <strong class="jxr_keyword">return</strong> false;
-<a class="jxr_linenumber" name="157" href="#157">157</a>             }
-<a class="jxr_linenumber" name="158" href="#158">158</a>         }
-<a class="jxr_linenumber" name="159" href="#159">159</a> 
-<a class="jxr_linenumber" name="160" href="#160">160</a>         <em class="jxr_comment">// Vérifier si la valeur existe déjà dans le même carré</em>
-<a class="jxr_linenumber" name="161" href="#161">161</a>         <strong class="jxr_keyword">int</strong> squareSize = (<strong class="jxr_keyword">int</strong>) Math.sqrt(dimension);
-<a class="jxr_linenumber" name="162" href="#162">162</a>         <strong class="jxr_keyword">int</strong> startX = (x / squareSize) * squareSize;
-<a class="jxr_linenumber" name="163" href="#163">163</a>         <strong class="jxr_keyword">int</strong> startY = (y / squareSize) * squareSize;
-<a class="jxr_linenumber" name="164" href="#164">164</a> 
-<a class="jxr_linenumber" name="165" href="#165">165</a>         <strong class="jxr_keyword">for</strong> (<strong class="jxr_keyword">int</strong> i = startX; i &lt; startX + squareSize; i++) {
-<a class="jxr_linenumber" name="166" href="#166">166</a>             <strong class="jxr_keyword">for</strong> (<strong class="jxr_keyword">int</strong> j = startY; j &lt; startY + squareSize; j++) {
-<a class="jxr_linenumber" name="167" href="#167">167</a>                 <strong class="jxr_keyword">if</strong> (grille[i][j] != <strong class="jxr_keyword">null</strong> &amp;&amp; grille[i][j].equals(value)) {
-<a class="jxr_linenumber" name="168" href="#168">168</a>                     <strong class="jxr_keyword">return</strong> false;
-<a class="jxr_linenumber" name="169" href="#169">169</a>                 }
-<a class="jxr_linenumber" name="170" href="#170">170</a>             }
-<a class="jxr_linenumber" name="171" href="#171">171</a>         }
-<a class="jxr_linenumber" name="172" href="#172">172</a>         <strong class="jxr_keyword">return</strong> <strong class="jxr_keyword">true</strong>;
-<a class="jxr_linenumber" name="173" href="#173">173</a>     }
-<a class="jxr_linenumber" name="174" href="#174">174</a> 
+<a class="jxr_linenumber" name="139" href="#139">139</a>     <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">final</strong> <strong class="jxr_keyword">boolean</strong> isPossible(<strong class="jxr_keyword">final</strong> <strong class="jxr_keyword">int</strong> x,
+<a class="jxr_linenumber" name="140" href="#140">140</a>             <strong class="jxr_keyword">final</strong> <strong class="jxr_keyword">int</strong> y, <strong class="jxr_keyword">final</strong> <a href="../sudoku/ElementDeGrille.html">ElementDeGrille</a> value)
+<a class="jxr_linenumber" name="141" href="#141">141</a>             <strong class="jxr_keyword">throws</strong> HorsBornesException, <a href="../interfaces/ElementInterditException.html">ElementInterditException</a> {
+<a class="jxr_linenumber" name="142" href="#142">142</a> 
+<a class="jxr_linenumber" name="143" href="#143">143</a>         <strong class="jxr_keyword">if</strong> (x &lt; 0 || y &lt; 0 || x &gt;= dimension || y &gt;= dimension) {
+<a class="jxr_linenumber" name="144" href="#144">144</a>             <strong class="jxr_keyword">throw</strong> <strong class="jxr_keyword">new</strong> <a href="../interfaces/HorsBornesException.html">HorsBornesException</a>(<span class="jxr_string">"Position en dehors de la grille"</span>);
+<a class="jxr_linenumber" name="145" href="#145">145</a>         }
+<a class="jxr_linenumber" name="146" href="#146">146</a> 
+<a class="jxr_linenumber" name="147" href="#147">147</a>         <em class="jxr_comment">// Vérifier si la valeur existe déjà dans la même ligne</em>
+<a class="jxr_linenumber" name="148" href="#148">148</a>         <strong class="jxr_keyword">for</strong> (<strong class="jxr_keyword">int</strong> i = 0; i &lt; dimension; i++) {
+<a class="jxr_linenumber" name="149" href="#149">149</a>             <strong class="jxr_keyword">if</strong> (grille[x][i] != <strong class="jxr_keyword">null</strong> &amp;&amp; grille[x][i].equals(value)) {
+<a class="jxr_linenumber" name="150" href="#150">150</a>                 <strong class="jxr_keyword">return</strong> false;
+<a class="jxr_linenumber" name="151" href="#151">151</a>             }
+<a class="jxr_linenumber" name="152" href="#152">152</a>         }
+<a class="jxr_linenumber" name="153" href="#153">153</a> 
+<a class="jxr_linenumber" name="154" href="#154">154</a>         <em class="jxr_comment">// Vérifier si la valeur existe déjà dans la même colonne</em>
+<a class="jxr_linenumber" name="155" href="#155">155</a>         <strong class="jxr_keyword">for</strong> (<strong class="jxr_keyword">int</strong> i = 0; i &lt; dimension; i++) {
+<a class="jxr_linenumber" name="156" href="#156">156</a>             <strong class="jxr_keyword">if</strong> (grille[i][y] != <strong class="jxr_keyword">null</strong> &amp;&amp; grille[i][y].equals(value)) {
+<a class="jxr_linenumber" name="157" href="#157">157</a>                 <strong class="jxr_keyword">return</strong> false;
+<a class="jxr_linenumber" name="158" href="#158">158</a>             }
+<a class="jxr_linenumber" name="159" href="#159">159</a>         }
+<a class="jxr_linenumber" name="160" href="#160">160</a> 
+<a class="jxr_linenumber" name="161" href="#161">161</a>         <em class="jxr_comment">// Vérifier si la valeur existe déjà dans le même carré</em>
+<a class="jxr_linenumber" name="162" href="#162">162</a>         <strong class="jxr_keyword">int</strong> squareSize = (<strong class="jxr_keyword">int</strong>) Math.sqrt(dimension);
+<a class="jxr_linenumber" name="163" href="#163">163</a>         <strong class="jxr_keyword">int</strong> startX = (x / squareSize) * squareSize;
+<a class="jxr_linenumber" name="164" href="#164">164</a>         <strong class="jxr_keyword">int</strong> startY = (y / squareSize) * squareSize;
+<a class="jxr_linenumber" name="165" href="#165">165</a> 
+<a class="jxr_linenumber" name="166" href="#166">166</a>         <strong class="jxr_keyword">for</strong> (<strong class="jxr_keyword">int</strong> i = startX; i &lt; startX + squareSize; i++) {
+<a class="jxr_linenumber" name="167" href="#167">167</a>             <strong class="jxr_keyword">for</strong> (<strong class="jxr_keyword">int</strong> j = startY; j &lt; startY + squareSize; j++) {
+<a class="jxr_linenumber" name="168" href="#168">168</a>                 <strong class="jxr_keyword">if</strong> (grille[i][j] != <strong class="jxr_keyword">null</strong> &amp;&amp; grille[i][j].equals(value)) {
+<a class="jxr_linenumber" name="169" href="#169">169</a>                     <strong class="jxr_keyword">return</strong> false;
+<a class="jxr_linenumber" name="170" href="#170">170</a>                 }
+<a class="jxr_linenumber" name="171" href="#171">171</a>             }
+<a class="jxr_linenumber" name="172" href="#172">172</a>         }
+<a class="jxr_linenumber" name="173" href="#173">173</a>         <strong class="jxr_keyword">return</strong> <strong class="jxr_keyword">true</strong>;
+<a class="jxr_linenumber" name="174" href="#174">174</a>     }
 <a class="jxr_linenumber" name="175" href="#175">175</a> 
 <a class="jxr_linenumber" name="176" href="#176">176</a>     <em class="jxr_javadoccomment">/**</em>
 <a class="jxr_linenumber" name="177" href="#177">177</a> <em class="jxr_javadoccomment">     * Vérifie si la valeur à une position spécifique est une valeur initiale.</em>

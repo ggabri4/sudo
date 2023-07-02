@@ -105,7 +105,7 @@ sudo
 <td>Lecture d'un champ jamais aliment&#xe9; dans sudoku.GrilleImpl.isPossible(int, int, ElementDeGrille)</td>
 <td>CORRECTNESS</td>
 <td><a class="externalLink" href="https://spotbugs.readthedocs.io/en/latest/bugDescriptions.html#NP_UNWRITTEN_FIELD">NP_UNWRITTEN_FIELD</a></td>
-<td><a href=".sudoku/GrilleImpl.html#L167">167</a></td>
+<td><a href=".sudoku/GrilleImpl.html#L168">168</a></td>
 <td>Medium</td></tr>
 <tr class="b">
 <td>Champ inutilis&#xe9; : sudoku.GrilleImpl.elementDeGrilles</td>
@@ -123,7 +123,7 @@ sudo
 <td>Champ jamais &#xe9;crit : sudoku.GrilleImpl.grille</td>
 <td>CORRECTNESS</td>
 <td><a class="externalLink" href="https://spotbugs.readthedocs.io/en/latest/bugDescriptions.html#UWF_UNWRITTEN_FIELD">UWF_UNWRITTEN_FIELD</a></td>
-<td><a href=".sudoku/GrilleImpl.html#L167">167</a></td>
+<td><a href=".sudoku/GrilleImpl.html#L168">168</a></td>
 <td>Medium</td></tr></table></div><a name="sudoku.SolveurImpl"></a>
 <div class="section">
 <h3><a name="sudoku.SolveurImpl"></a>sudoku.SolveurImpl</h3>
@@ -138,13 +138,13 @@ sudo
 <td>La m&#xe9;thode sudoku.SolveurImpl.solve(Grille) risque d'exposer sa repr&#xe9;sentation interne en stockant un objet externe modifiable dans sudoku.SolveurImpl.grille</td>
 <td>MALICIOUS_CODE</td>
 <td><a class="externalLink" href="https://spotbugs.readthedocs.io/en/latest/bugDescriptions.html#EI_EXPOSE_REP2">EI_EXPOSE_REP2</a></td>
-<td><a href=".sudoku/SolveurImpl.html#L29">29</a></td>
+<td><a href=".sudoku/SolveurImpl.html#L30">30</a></td>
 <td>Medium</td></tr>
 <tr class="a">
 <td>Test de nullit&#xe9; redondant sur une valeur non nulle dans sudoku.SolveurImpl.solve()</td>
 <td>STYLE</td>
 <td><a class="externalLink" href="https://spotbugs.readthedocs.io/en/latest/bugDescriptions.html#RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE">RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE</a></td>
-<td><a href=".sudoku/SolveurImpl.html#L49">49</a></td>
+<td><a href=".sudoku/SolveurImpl.html#L50">50</a></td>
 <td>Medium</td></tr></table></div>
       </div>
     </div>
