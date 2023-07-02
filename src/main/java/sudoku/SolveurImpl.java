@@ -15,19 +15,19 @@ import interfaces.ValeurInitialeModificationException;
 public class SolveurImpl implements Solveur {
     /**
      * Instance de GrilleImpl pour stocker la grille de sudoku à résoudre.
-     * 
+     *
      */
     private GrilleImpl grille;
 
     /**
      * Tente de résoudre la grille de sudoku fournie.
      *
-     * @param grille La grille de sudoku à résoudre.
+     * @param grilleParam La grille de sudoku à résoudre.
      * @return true si la grille de sudoku a pu être résolue, sinon false.
      */
     @Override
-    public final boolean solve(final Grille grille) {
-        this.grille = (GrilleImpl) grille;
+    public final boolean solve(final Grille grilleParam) {
+        this.grille = (GrilleImpl) grilleParam;
         return solve();
     }
 
@@ -40,7 +40,7 @@ public class SolveurImpl implements Solveur {
      * à la cellule suivante par un appel récursif.
      * Si aucun nombre valide ne peut être placé,
      * il revient en arrière et change le nombre de la cellule précédente.
-     * 
+     *
      * @return true si la grille de sudoku a pu être résolue, sinon false.
      */
     public final boolean solve() {

@@ -67,10 +67,10 @@ sudo
 <th><img src="images/icon_warning_sml.gif" alt="" />&#160;Warnings</th>
 <th><img src="images/icon_error_sml.gif" alt="" />&#160;Errors</th></tr>
 <tr class="b">
-<td>2</td>
 <td>0</td>
 <td>0</td>
-<td>7</td></tr></table></div>
+<td>0</td>
+<td>0</td></tr></table></div>
 <div class="section">
 <h2><a name="Files"></a>Files</h2>
 <table border="0" class="bodyTable">
@@ -78,17 +78,7 @@ sudo
 <th>File</th>
 <th><img src="images/icon_info_sml.gif" alt="" />&#160;I</th>
 <th><img src="images/icon_warning_sml.gif" alt="" />&#160;W</th>
-<th><img src="images/icon_error_sml.gif" alt="" />&#160;E</th></tr>
-<tr class="b">
-<td><a href="#sudoku.Main.java">sudoku/Main.java</a></td>
-<td>0</td>
-<td>0</td>
-<td>4</td></tr>
-<tr class="a">
-<td><a href="#sudoku.SolveurImpl.java">sudoku/SolveurImpl.java</a></td>
-<td>0</td>
-<td>0</td>
-<td>3</td></tr></table></div>
+<th><img src="images/icon_error_sml.gif" alt="" />&#160;E</th></tr></table></div>
 <div class="section">
 <h2><a name="Rules"></a>Rules</h2>
 <table border="0" class="bodyTable">
@@ -96,94 +86,9 @@ sudo
 <th>Category</th>
 <th>Rule</th>
 <th>Violations</th>
-<th>Severity</th></tr>
-<tr class="a">
-<td>coding</td>
-<td><a class="externalLink" href="http://checkstyle.sourceforge.net/config_coding.html#AvoidInlineConditionals">AvoidInlineConditionals</a></td>
-<td>1</td>
-<td><img src="images/icon_error_sml.gif" alt="" />&#160;Error</td></tr>
-<tr class="b">
-<td></td>
-<td><a class="externalLink" href="http://checkstyle.sourceforge.net/config_coding.html#HiddenField">HiddenField</a></td>
-<td>1</td>
-<td><img src="images/icon_error_sml.gif" alt="" />&#160;Error</td></tr>
-<tr class="a">
-<td>design</td>
-<td><a class="externalLink" href="http://checkstyle.sourceforge.net/config_design.html#HideUtilityClassConstructor">HideUtilityClassConstructor</a></td>
-<td>1</td>
-<td><img src="images/icon_error_sml.gif" alt="" />&#160;Error</td></tr>
-<tr class="b">
-<td>regexp</td>
-<td><a class="externalLink" href="http://checkstyle.sourceforge.net/config_regexp.html#RegexpSingleline">RegexpSingleline</a>
-<ul>
-<li>format: <tt>&quot;\s+$&quot;</tt></li>
-<li>maximum: <tt>&quot;0&quot;</tt></li>
-<li>message: <tt>&quot;Line has trailing spaces.&quot;</tt></li>
-<li>minimum: <tt>&quot;0&quot;</tt></li></ul></td>
-<td>4</td>
-<td><img src="images/icon_error_sml.gif" alt="" />&#160;Error</td></tr></table></div>
+<th>Severity</th></tr></table></div>
 <div class="section">
-<h2><a name="Details"></a>Details</h2>
-<div class="section">
-<h3 id="sudoku.Main.java">sudoku/Main.java</h3>
-<table border="0" class="bodyTable">
-<tr class="a">
-<th>Severity</th>
-<th>Category</th>
-<th>Rule</th>
-<th>Message</th>
-<th>Line</th></tr>
-<tr class="b">
-<td><img src="images/icon_error_sml.gif" alt="" />&#160;Error</td>
-<td>design</td>
-<td>HideUtilityClassConstructor</td>
-<td>Les classes utilitaires ne doivent pas avoir de constructeur par d&#xe9;faut ou public.</td>
-<td><a href="./xref/sudoku/Main.html#L15">15</a></td></tr>
-<tr class="a">
-<td><img src="images/icon_error_sml.gif" alt="" />&#160;Error</td>
-<td>regexp</td>
-<td>RegexpSingleline</td>
-<td>Line has trailing spaces.</td>
-<td><a href="./xref/sudoku/Main.html#L18">18</a></td></tr>
-<tr class="b">
-<td><img src="images/icon_error_sml.gif" alt="" />&#160;Error</td>
-<td>coding</td>
-<td>AvoidInlineConditionals</td>
-<td>L'utilisation de l'op&#xe9;rateur conditionel est prohib&#xe9;e.</td>
-<td><a href="./xref/sudoku/Main.html#L28">28</a></td></tr>
-<tr class="a">
-<td><img src="images/icon_error_sml.gif" alt="" />&#160;Error</td>
-<td>regexp</td>
-<td>RegexpSingleline</td>
-<td>Line has trailing spaces.</td>
-<td><a href="./xref/sudoku/Main.html#L42">42</a></td></tr></table></div>
-<div class="section">
-<h3 id="sudoku.SolveurImpl.java">sudoku/SolveurImpl.java</h3>
-<table border="0" class="bodyTable">
-<tr class="b">
-<th>Severity</th>
-<th>Category</th>
-<th>Rule</th>
-<th>Message</th>
-<th>Line</th></tr>
-<tr class="a">
-<td><img src="images/icon_error_sml.gif" alt="" />&#160;Error</td>
-<td>regexp</td>
-<td>RegexpSingleline</td>
-<td>Line has trailing spaces.</td>
-<td><a href="./xref/sudoku/SolveurImpl.html#L18">18</a></td></tr>
-<tr class="b">
-<td><img src="images/icon_error_sml.gif" alt="" />&#160;Error</td>
-<td>coding</td>
-<td>HiddenField</td>
-<td>'grille' masque un attribut.</td>
-<td><a href="./xref/sudoku/SolveurImpl.html#L29">29</a></td></tr>
-<tr class="a">
-<td><img src="images/icon_error_sml.gif" alt="" />&#160;Error</td>
-<td>regexp</td>
-<td>RegexpSingleline</td>
-<td>Line has trailing spaces.</td>
-<td><a href="./xref/sudoku/SolveurImpl.html#L43">43</a></td></tr></table></div></div>
+<h2><a name="Details"></a>Details</h2></div>
       </div>
     </div>
     <div class="clear">

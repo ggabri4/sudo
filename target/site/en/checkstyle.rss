@@ -25,8 +25,8 @@ under the License.
     <language>en-us</language>
     <copyright>&#169;2023</copyright>
     <item>
-      <title>File: 2,
-             Errors: 7,
+      <title>File: 0,
+             Errors: 0,
              Warnings: 0,
              Infos: 0
       </title>
@@ -44,34 +44,6 @@ under the License.
             </tr>
           </thead>
           <tbody>
-                          <tr>
-                <td>
-                  <a href="http://www.example.com/checkstyle.html#sudoku.SolveurImpl.java">sudoku/SolveurImpl.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  3
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="http://www.example.com/checkstyle.html#sudoku.Main.java">sudoku/Main.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  4
-                </td>
-              </tr>
                       </tbody>
         </table>
         

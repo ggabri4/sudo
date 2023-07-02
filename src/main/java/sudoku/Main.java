@@ -12,10 +12,22 @@ import interfaces.HorsBornesException;
 /**
  * Lance le solveur de sudoku.
  */
-class Main {
+public final class Main {
+
+    /**
+     * Constructeur privé pour empêcher.
+     * l'instanciation de la classe utilitaire
+     *
+     * Aucun code n'est nécessaire ici car la classe
+     * utilitaire ne nécessite pas de constructeur spécifique
+     *
+     */
+    private Main() {
+    }
+
     /**
      * Affiche la grille dans le terminal de commande.
-     * 
+     *
      * @param grille une grille de sudoku
      */
     private static void afficherGrille(final Grille grille) {
@@ -25,9 +37,11 @@ class Main {
                 ElementDeGrille valeur;
                 try {
                     valeur = grille.getValue(i, j);
-                    System.out.print(valeur != null ? valeur.toString(
-
-                    ) + " " : "- ");
+                    if (valeur != null) {
+                        System.out.print(valeur.toString() + " ");
+                    } else {
+                        System.out.print("- ");
+                    }
 
                 } catch (HorsBornesException e) {
                     e.printStackTrace();
@@ -39,7 +53,7 @@ class Main {
 
     /**
      * Main du solveur.
-     * 
+     *
      * @param args le nom du fichier pour la grille
      */
     public static void main(final String[] args) {
