@@ -9,7 +9,8 @@ import interfaces.ValeurInitialeModificationException;
  * Implémentation de l'interface Solveur.
  * Résout une grille de sudoku en utilisant l'algorithme de backtracking.
  *
- * @author Sébastien Choplin <sebastien.choplin@u-picardie.fr>
+ * @author Gabriel GRUIT
+ * @author Steven CARLIER
  */
 public class SolveurImpl implements Solveur {
     /**
@@ -47,24 +48,24 @@ public class SolveurImpl implements Solveur {
                 try {
                     if (grille.getValue(row, col) == null) {
                         for (int num = 1; num <= grille.getDimension(); num++) {
-                            ElementDeGrille value = new ElementDeGrilleImplAsChar((char)num);
-                            
-                                if (grille.isPossible(row, col, value)) {
-                                    grille.setValue(row, col, value);
-                                    if (solve()) {
-                                        return true;
-                                    } else {
-                                        grille.setValue(row, col, null);
-                                    }
+                            ElementDeGrille value = new ElementDeGrilleImplAsChar((char) num);
+
+                            if (grille.isPossible(row, col, value)) {
+                                grille.setValue(row, col, value);
+                                if (solve()) {
+                                    return true;
+                                } else {
+                                    grille.setValue(row, col, null);
                                 }
-                            
+                            }
+
                         }
                         return false;
                     }
-                } catch (HorsBornesException 
-                | ValeurImpossibleException 
-                | ElementInterditException 
-                | ValeurInitialeModificationException e) {
+                } catch (HorsBornesException
+                        | ValeurImpossibleException
+                        | ElementInterditException
+                        | ValeurInitialeModificationException e) {
                     e.printStackTrace();
                 }
             }

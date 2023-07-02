@@ -3,7 +3,8 @@ package sudoku;
 /**
  * Interface de résolveur de Grille.
  *
- * @author Sébastien Choplin <sebastien.choplin@u-picardie.fr>
+ * @author Steven Carlier
+ * @author Gabriel GRUIT
  */
 public interface Solveur {
     /**
